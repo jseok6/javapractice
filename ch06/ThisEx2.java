@@ -41,8 +41,6 @@ implements ActionListener{
 				dispose();
 			}
 		}
-	
-	
 	public static void main(String[] args) {
 		new ThisEx2();
 		
