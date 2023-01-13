@@ -1,5 +1,4 @@
 package ch06;
-
 import common.util.StringUtil;
 
 class Static3{
