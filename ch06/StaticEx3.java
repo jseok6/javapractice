@@ -1,5 +1,6 @@
 package ch06;
-import common.util.StringUtil;
+
+import java.util.*;
 
 class Static3{
 	/*스태틱 필드는 동일한 클래스의 모든 객체가 공유의 목적으로 하나만 메모리에 저장된다*/
@@ -24,7 +25,7 @@ public class StaticEx3 {
 		System.out.println(st2.a);
 		
 		String str="1000000000000000";
-		System.out.println(StringUtil.addComma(str));
+	/*	System.out.println(StringUtils.addComma(str));*/
 	}
 
 }

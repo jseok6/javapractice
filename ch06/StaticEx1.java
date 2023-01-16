@@ -12,16 +12,16 @@ public class StaticEx1 {
 	 * 사용 할 수 없다.
 	 * */
 class Static1{
-	static int i=0;
+	/*static*/ int i=0;
 	int j=0;
 	
-	static void prn() {
+	/*static*/ void prn() {
 		
 	}
 	void prn2() {
 		
 	}
-	static class inner{}//내부 클래스 앞에는 static 올 수 있음.
+	/*static*/ class inner{}//내부 클래스 앞에는 static 올 수 있음.
 }
 
 	public static void main(String[] args) {
