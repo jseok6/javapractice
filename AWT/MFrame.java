@@ -1,4 +1,4 @@
-package ch07;
+package AWT;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
