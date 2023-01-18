@@ -28,10 +28,16 @@ implements ActionListener{
 //		System.out.println(getX());
 //		System.out.println(getY());
 		MyDialog md= new MyDialog(this,title,true);
-		int x=getX();
-		int y=getY();
+		//현재 frame의좌표
+		int fx=getX();
+		int fy=getY();
+		//dialog의 창크기
 		int width=100;
 		int height=150;
+		int x=fx+getWidth()/2-width/2;//메세지박스 x좌표
+		int y=fy+getHeight()/2-height/2;//메세지박스 y좌표
+		
+		
 		md.setBounds(x, y, width, height);
 		md.setVisible(true);
 		
