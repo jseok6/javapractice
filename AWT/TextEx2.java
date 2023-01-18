@@ -1,13 +1,13 @@
 package AWT;
 
-//import java.awt.BorderLayout;
-//import java.awt.Button;
-//import java.awt.Color;
-//import java.awt.Panel;
-//import java.awt.TextArea;
-//import java.awt.TextField;
-//import java.awt.event.ActionEvent;
-//import java.awt.event.ActionListener;
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.Panel;
+import java.awt.TextArea;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -33,7 +33,7 @@ implements ActionListener{
 		p.add(btn=new Button("SEND"));
 		tf.addActionListener(this);//엔터이벤트
 		btn.addActionListener(this);//클릭이벤트
-		add(p,"SOUTH");
+		add(p,"South");
 		validate();
 		tf.requestFocus();
 	}
