@@ -2,6 +2,8 @@ package AWT;
 
 import java.awt.Button;
 
+import event.MFrame;
+
 public class ButtonEx1 extends MFrame{
 	Button btn[]=new Button[4];
 	String label[]= {"추가","삭제","전체삭제","종료"};
@@ -13,6 +15,8 @@ public class ButtonEx1 extends MFrame{
 		{
 			add(btn[i]=new Button(label[i]));
 		}
+		
+		
 	}
 
 	public static void main(String[] args) {

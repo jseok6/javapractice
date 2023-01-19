@@ -4,6 +4,8 @@ import java.awt.*;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
+import event.MFrame;
+
 public class ChoiceEx2 extends MFrame 
 implements ItemListener{
 	String sair[] = {"대한항공","아시아나","에어부산","진에어"};

@@ -2,6 +2,8 @@ package AWT;
 
 import java.awt.Canvas;
 
+import event.MFrame;
+
 public class CanvasEx1 extends MFrame {
 
 	Canvas c;

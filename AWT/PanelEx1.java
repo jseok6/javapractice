@@ -5,6 +5,8 @@ import java.awt.Button;
 import java.awt.Label;
 import java.awt.Panel;
 
+import event.MFrame;
+
 public class PanelEx1 extends MFrame{
 	Label label[]=new Label[3];
 	Button btn[]=new Button[3];

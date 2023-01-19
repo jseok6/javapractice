@@ -1,6 +1,8 @@
 package AWT;
 import java.awt.Label;
 
+import event.MFrame;
+
 
 public class LabelEx1 extends MFrame{
 	

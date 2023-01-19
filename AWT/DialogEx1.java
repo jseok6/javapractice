@@ -4,6 +4,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import event.MFrame;
+
 
 public class DialogEx1 extends MFrame
 implements ActionListener{
@@ -34,11 +36,13 @@ implements ActionListener{
 		//dialog의 창크기
 		int width=100;
 		int height=150;
-		int x=fx+getWidth()/2-width/2;//메세지박스 x좌표
-		int y=fy+getHeight()/2-height/2;//메세지박스 y좌표
+//		int x=fx+getWidth()/2-width/2;//메세지박스 x좌표
+//		int y=fy+getHeight()/2-height/2;//메세지박스 y좌표
+		md.setSize(width,height);
+		md.setLocationRelativeTo(this);
 		
 		
-		md.setBounds(x, y, width, height);
+//		md.setBounds(x, y, width, height);
 		md.setVisible(true);
 		
 	}

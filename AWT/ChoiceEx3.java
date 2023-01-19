@@ -8,6 +8,8 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.util.List;
 
+import event.MFrame;
+
 public class ChoiceEx3 extends MFrame 
 implements ItemListener{
 

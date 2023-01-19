@@ -5,6 +5,8 @@ import java.awt.CheckboxGroup;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
+import event.MFrame;
+
 public class CheckboxEx1 extends MFrame
 implements ItemListener{
 	
