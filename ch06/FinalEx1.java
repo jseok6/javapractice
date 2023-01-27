@@ -1,9 +1,9 @@
 package ch06;
-/*final(ë§ˆì§€ë§‰):í´ëž˜ìŠ¤,í•„ë“œ(ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜),ë©”ì†Œë“œ
- * 1.í´ëž˜ìŠ¤:subí´ëž˜ìŠ¤ê°€ ì—†ëŠ” í´ëž˜ìŠ¤
- * 2.í•„ë“œ:ìƒìˆ˜ì„ ì–¸(í•„ë“œ,ë§¤ê°œë³€ìˆ˜,ì§€ì—­ë³€ìˆ˜)
- * 3.ë©”ì†Œë“œ:ì˜¤ë²„ë¼ì´ë”©ë¶ˆê°€
- * ì˜¤ë²„ë¼ì´ë”©ì´ëž€:ìƒìœ„í´ëž˜ìŠ¤ì—ì„œ ì •ì˜í•œ ë©”ì†Œë“œë¥¼ í•˜ìœ„í´ëž˜ìŠ¤ì—ì„œ ìž¬ì •ì˜í•˜ëŠ”ê²ƒ
+/*final(¸¶Áö¸·):Å¬·¡½º,ÇÊµå(ÀÎ½ºÅÏ½ºº¯¼ö),¸Þ¼Òµå
+ * 1.Å¬·¡½º:subÅ¬·¡½º°¡ ¾ø´Â Å¬·¡½º
+ * 2.ÇÊµå:»ó¼ö¼±¾ð(ÇÊµå,¸Å°³º¯¼ö,Áö¿ªº¯¼ö)
+ * 3.¸Þ¼Òµå:¿À¹ö¶óÀÌµùºÒ°¡
+ * ¿À¹ö¶óÀÌµùÀÌ¶õ:»óÀ§Å¬·¡½º¿¡¼­ Á¤ÀÇÇÑ ¸Þ¼Òµå¸¦ ÇÏÀ§Å¬·¡½º¿¡¼­ ÀçÁ¤ÀÇÇÏ´Â°Í
  * */
 
 final class Final1{
@@ -11,20 +11,20 @@ final class Final1{
 }
 
 class Final3{
-	static final int KIA=1;//ìƒìˆ˜ëŠ” ë¬´ì¡°ê±´ staticì„ ë¶™ì¸ë‹¤
-	final int SK=2;//finalì€ ìƒìˆ˜ì¸ë° ì´ˆê¸°í™”ë¥¼ ë¬´ì¡°ê±´ í•´ì¤˜ì•¼í•¨.
+	static final int KIA=1;//»ó¼ö´Â ¹«Á¶°Ç staticÀ» ºÙÀÎ´Ù
+	final int SK=2;//finalÀº »ó¼öÀÎµ¥ ÃÊ±âÈ­¸¦ ¹«Á¶°Ç ÇØÁà¾ßÇÔ.
 	int k;
 	public Final3() {
-		//KIA=2; <ã…¡kia finalë¡œ ì„ ì–¸í–ˆê¸° ë•Œë¬¸ì— ì˜¤ë¥˜
+		//KIA=2; <¤Ñkia final·Î ¼±¾ðÇß±â ¶§¹®¿¡ ¿À·ù
 		System.out.println(k);
 	}
 	public void prn(final int a)
 	{
 		//a=10;
 		final int b=10;
-		//b=20; ì§€ì—­ë³€ìˆ˜ ì„ ì–¸í–ˆëŠ”ë° finalë¡œ ì•žì— ì„ ì–¸ë˜ì—ˆê¸° ë•Œë¬¸ì— ë³€ê²½ë¶ˆê°€
+		//b=20; Áö¿ªº¯¼ö ¼±¾ðÇß´Âµ¥ final·Î ¾Õ¿¡ ¼±¾ðµÇ¾ú±â ¶§¹®¿¡ º¯°æºÒ°¡
 		int c;
-		//System.out.println(c); ì˜¤ë¥˜
+		//System.out.println(c); ¿À·ù
 		int d=10;
 		int e;
 		e=10;
@@ -47,7 +47,7 @@ class Final5 extends Final4{
 	}
 	
 }
-//class Final extends Final1{} ìƒì†ë¶ˆê°€ëŠ¥
+//class Final extends Final1{} »ó¼ÓºÒ°¡´É
 public class FinalEx1 {
 
 	public static void main(String[] args) {

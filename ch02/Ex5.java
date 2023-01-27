@@ -3,11 +3,11 @@ package ch02;
 public class Ex5 {
 
 	public static void main(String[] args) {
-		//ê¸°ë³¸í˜• íƒ€ì…ì˜ í˜•ë³€í™˜
+		//±âº»Çü Å¸ÀÔÀÇ Çüº¯È¯
 		int a=10;
-		long b=a;//ë¬µì‹œì  í˜•ë³€í™˜
+		long b=a;//¹¬½ÃÀû Çüº¯È¯
 		
-		short c=(short)a;//ëª…ì‹œì  í˜•ë³€í™˜
+		short c=(short)a;//¸í½ÃÀû Çüº¯È¯
 		System.out.println(a);
 		System.out.println(b);
 		System.out.println(c);

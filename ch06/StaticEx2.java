@@ -1,9 +1,9 @@
 package ch06;
-/*static í•„ë“œ ë° ë©”ì†Œë“œëŠ” í´ë˜ìŠ¤ëª….í•„ë“œ or ë©”ì†Œë“œ ì¼ë•Œ
- * ë©”ëª¨ë¦¬ ë¡œë”©ì´ ë˜ì§€ë§Œ non-static í•„ë“œ ë° ë©”ì†Œë“œëŠ”
- * ë°˜ë“œì‹œ ê°ì²´ë¥¼ ìƒì„±í•´ì•¼ ë©”ëª¨ë¦¬ ë¡œë”©ëœë‹¤.
- * ê·¸ë˜ì„œ non-static í•„ë“œ ë° ë©”ì†Œë“œëŠ” static í•„ë“œ ë° ë©”ì†Œë“œì—
- * ì‚¬ìš© í•  ìˆ˜ ì—†ë‹¤.
+/*static ÇÊµå ¹× ¸Ş¼Òµå´Â Å¬·¡½º¸í.ÇÊµå or ¸Ş¼Òµå ÀÏ¶§
+ * ¸Ş¸ğ¸® ·ÎµùÀÌ µÇÁö¸¸ non-static ÇÊµå ¹× ¸Ş¼Òµå´Â
+ * ¹İµå½Ã °´Ã¼¸¦ »ı¼ºÇØ¾ß ¸Ş¸ğ¸® ·ÎµùµÈ´Ù.
+ * ±×·¡¼­ non-static ÇÊµå ¹× ¸Ş¼Òµå´Â static ÇÊµå ¹× ¸Ş¼Òµå¿¡
+ * »ç¿ë ÇÒ ¼ö ¾ø´Ù.
  * */
 class Static2{
 	static int a=10;
@@ -13,7 +13,7 @@ class Static2{
 	
 	static void prn1() {
 		System.out.println(a);
-		//System.out.println(b);//staticë©”ì†Œë“œëŠ” non=static ì‚¬ìš©ë¶ˆê°€
+		//System.out.println(b);//static¸Ş¼Òµå´Â non=static »ç¿ëºÒ°¡
 	}
 	void prn2() {
 		System.out.println(a);

@@ -4,10 +4,10 @@ public class CastingEx1 {
 	
 	public static void main(String[] args) {
 		int a=1234567;
-		short s= (short) a;//ëª…ì‹œì  í˜•ë³€í™˜:í°íƒ€ì…->ì‘ì€íƒ€ì…
+		short s= (short) a;//¸í½ÃÀû Çüº¯È¯:Å«Å¸ÀÔ->ÀÛÀºÅ¸ÀÔ
 		System.out.println(a);
 		System.out.println(s);
-		long l=a;//ë¬µì‹œì  í˜•ë³€í™˜
+		long l=a;//¹¬½ÃÀû Çüº¯È¯
 		System.out.println(l);//
 		
 	}

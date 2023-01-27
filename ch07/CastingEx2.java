@@ -19,18 +19,18 @@ public class CastingEx2 {
 
 	public static void main(String[] args) {
 		Person2 p;
-		Student2 s = new Student2("í™ê¸¸ë™");
-		p=s;//ì—…ìºìŠ¤íŒ…
+		Student2 s = new Student2("È«±æµ¿");
+		p=s;//¾÷Ä³½ºÆÃ
 		System.out.println(p.name);
 //		System.out.println(p.grade);
 		Student2 s2;
-		Person2 p2=new Person2("í™ê¸¸ì");
-		//s2=(Student2)p2;//ë‹¤ìš´ìºìŠ¤íŒ… ì»´íŒŒì¼ì€ ë˜ì§€ë§Œ ì‹¤í–‰ì€ ì˜¤ë¥˜ë‚¨
+		Person2 p2=new Person2("È«±æÀÚ");
+		//s2=(Student2)p2;//´Ù¿îÄ³½ºÆÃ ÄÄÆÄÀÏÀº µÇÁö¸¸ ½ÇÇàÀº ¿À·ù³²
 		//s2.grade="A";
 		//System.out.println(s2.grade);
 		Vector v=new Vector();
 		String str = new String();
-		Student2 s3= new Student2("ì¥ë™ê±´");
+		Student2 s3= new Student2("Àåµ¿°Ç");
 		v.add(str);
 		v.add(s3);
 		String str1=(String)v.get(0);

@@ -9,11 +9,11 @@ import java.awt.event.ActionListener;
 
 public class ThisEx2 extends MFrame
 implements ActionListener{
-	Button btn;//ë²„íŠ¼í•„ìš”í• ë•Œ ì‚¬ìš©
+	Button btn;//¹öÆ°ÇÊ¿äÇÒ¶§ »ç¿ë
 	
 	public void actionPerformed(ActionEvent e) {
-		//System.out.println("ë³´ì´ë‚˜ìš”");
-		MDialog md=new MDialog(this, "ë³´ì´ë‚˜ìš”");
+		//System.out.println("º¸ÀÌ³ª¿ä");
+		MDialog md=new MDialog(this, "º¸ÀÌ³ª¿ä");
 	}
 	public ThisEx2() {
 		super(500,500);

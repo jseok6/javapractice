@@ -7,20 +7,20 @@ class Constructor5{
 	
 	public Constructor5() {
 		/**
-		 * ì¤‘ë³µëœê¸°ëŠ¥
+		 * Áßº¹µÈ±â´É
 		 * 
 		 * */
 	}
 	public Constructor5(int i) {
 		a=i;
 		/**
-		 * ì¤‘ë³µëœê¸°ëŠ¥
+		 * Áßº¹µÈ±â´É
 		 * */
 	}
 	public Constructor5(String s) {
 		str=s;
 		/**
-		 * ì¤‘ë³µëœê¸°ëŠ¥
+		 * Áßº¹µÈ±â´É
 		 * */
 	}
 }
@@ -30,11 +30,11 @@ class Constructor5_1{
 	String str;
 	public Constructor5_1() {
 		/*
-		 *ì¤‘ë³µëœê¸°ëŠ¥ */
+		 *Áßº¹µÈ±â´É */
 	}
 	public Constructor5_1(int i) {
-		this();//ìì‹ ì˜ ë””í´íŠ¸ ìƒì„±ì í˜¸ì¶œí•¨,ë°˜ë“œì‹œ ìƒì„±ìì˜ ì²«ë²ˆì§¸ë¼ì¸
-		//thisë¥¼ í˜¸ì¶œí•˜ëŠ” ìƒì„±ìëŠ” super ë¬´ì¡°ê±´ ìƒëµ
+		this();//ÀÚ½ÅÀÇ µğÆúÆ® »ı¼ºÀÚ È£ÃâÇÔ,¹İµå½Ã »ı¼ºÀÚÀÇ Ã¹¹øÂ°¶óÀÎ
+		//this¸¦ È£ÃâÇÏ´Â »ı¼ºÀÚ´Â super ¹«Á¶°Ç »ı·«
 		a=i;
 	}
 	public Constructor5_1(String s) {

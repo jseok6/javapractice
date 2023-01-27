@@ -1,15 +1,15 @@
 package ch06;
 
-class Constructor1 {//extends Object ìƒëµë˜ì–´ìˆìŒ
-	//ë””í´íŠ¸ ìƒì„±ì:êµ¬í˜„í•˜ì§€ ì•Šìœ¼ë©´ jvm ì»´íŒŒì¼ ì‹œì ì— ì œê³µ
+class Constructor1 {//extends Object »ı·«µÇ¾îÀÖÀ½
+	//µğÆúÆ® »ı¼ºÀÚ:±¸ÇöÇÏÁö ¾ÊÀ¸¸é jvm ÄÄÆÄÀÏ ½ÃÁ¡¿¡ Á¦°ø
 	public Constructor1() {
-		System.out.println("ìƒì„±ì í˜¸ì¶œ");
+		System.out.println("»ı¼ºÀÚ È£Ãâ");
 	}
 	public Constructor1(int i) {
-		System.out.println("ë§¤ê°œë³€ìˆ˜ int ìƒì„±ì í˜¸ì¶œ");
+		System.out.println("¸Å°³º¯¼ö int »ı¼ºÀÚ È£Ãâ");
 	}
 	public Constructor1(String s) {
-		System.out.println("ë§¤ê°œë³€ìˆ˜ String ìƒì„±ì í˜¸ì¶œ");
+		System.out.println("¸Å°³º¯¼ö String »ı¼ºÀÚ È£Ãâ");
 	}
 }
 
@@ -17,9 +17,9 @@ class Constructor1 {//extends Object ìƒëµë˜ì–´ìˆìŒ
 public class ConstructorEx1 {
 
 	public static void main(String[] args) {
-		//ìƒì„±ìê°€ ë§ì´ ì¡´ì¬í•˜ëŠ” ì´ìœ :ê°ì²´ê°€ ìƒì„±ë˜ëŠ” ë‹¤ì–‘í•œ caseë•Œë¬¸ì— ì œê³µ
+		//»ı¼ºÀÚ°¡ ¸¹ÀÌ Á¸ÀçÇÏ´Â ÀÌÀ¯:°´Ã¼°¡ »ı¼ºµÇ´Â ´Ù¾çÇÑ case¶§¹®¿¡ Á¦°ø
 		Constructor1 c1= new Constructor1();
 		Constructor1 c2= new Constructor1(22);
-		Constructor1 c3= new Constructor1("í•˜í•˜");
+		Constructor1 c3= new Constructor1("ÇÏÇÏ");
 	}
 }

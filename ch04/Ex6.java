@@ -5,34 +5,34 @@ import java.util.Scanner;
 public class Ex6 {
 
 	public static void main(String[] args) {
-		/*ì ìˆ˜ì™€ í•™ë…„ ì…ë ¥ë°›ì•„ 60ì ì´ìƒì´ë©´ í•©ê²©
-		4í•™ë…„ì€ 70ì ì´ìƒí•©ê²©*/
+		/*Á¡¼ö¿Í ÇĞ³â ÀÔ·Â¹Ş¾Æ 60Á¡ÀÌ»óÀÌ¸é ÇÕ°İ
+		4ÇĞ³âÀº 70Á¡ÀÌ»óÇÕ°İ*/
 		Scanner sc=new Scanner(System.in);
 		int score,year;
-		System.out.println("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.(0~100)");
+		System.out.println("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.(0~100)");
 		score=sc.nextInt();
-		System.out.println("í•™ë…„ì„ ì…ë ¥í•˜ì„¸ìš”.(1~4)");
+		System.out.println("ÇĞ³âÀ» ÀÔ·ÂÇÏ¼¼¿ä.(1~4)");
 		year=sc.nextInt();
 		if (year<4)
 		{
 			if(score>=60) 
 			{
-				System.out.println("í•©ê²©");
+				System.out.println("ÇÕ°İ");
 			}
 			else 
 			{
-				System.out.println("ë¶ˆí•©ê²©");
+				System.out.println("ºÒÇÕ°İ");
 			}
 		}
 		else if(year==4)
 		{
 			if(score>=70)
 			{
-				System.out.println("í•©ê²©");
+				System.out.println("ÇÕ°İ");
 			}
 			else 
 			{
-				System.out.println("ë¶ˆí•©ê²©");
+				System.out.println("ºÒÇÕ°İ");
 			}
 		}
 	}

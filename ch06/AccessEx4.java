@@ -2,8 +2,8 @@ package ch06;
 import ch06_1.Access3;
 
 class Access4 extends Access3{
-	//ìƒì†ì—ì„œ public,protectedê¹Œì§€ ìœ ì‚°
-	//privateëŠ” ë¶ˆê°€ëŠ¥
+	//»ó¼Ó¿¡¼­ public,protected±îÁö À¯»ê
+	//private´Â ºÒ°¡´É
 	public Access4() {
 		int k=b+c;
 		

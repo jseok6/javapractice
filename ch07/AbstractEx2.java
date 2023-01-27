@@ -6,17 +6,17 @@ abstract class Abstract2{
 
 
 abstract class Abstract2_1 extends Abstract2{
-	abstract void prn2();//ì¶”ìƒ í´ë˜ìŠ¤ë¼ë¦¬ ìƒì†ê°€ëŠ¥
+	abstract void prn2();//Ãß»ó Å¬·¡½º³¢¸® »ó¼Ó°¡´É
 }
 
 class Normal2 extends Abstract2_1 {
 
 	@Override
-	void prn() {     //ë°˜ë“œì‹œí•„ìš”
+	void prn() {     //¹İµå½ÃÇÊ¿ä
 	}
 	
 	@Override
-	void prn2() {    //ë°˜ë“œì‹œí•„ìš”
+	void prn2() {    //¹İµå½ÃÇÊ¿ä
 	}
 	
 }

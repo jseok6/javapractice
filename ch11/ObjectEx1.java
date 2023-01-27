@@ -1,33 +1,25 @@
 package ch11;
-import java.lang.*;//ìƒëµë˜ì–´ì‡ìŒ
-import java.util.*;
 
+import java.lang.*;//»ı·«
 
-class Point{
-	
-}
+class Point{}
 
 public class ObjectEx1 {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Point p=new Point();
-		System.out.println("í´ë˜ìŠ¤ ì´ë¦„:"+p.getClass());
-		System.out.println("í•´ì‰¬ì½”ë“œ:"+p.hashCode());
-		//toStringìƒëµê°€ëŠ¥
-		System.out.println("ê°ì²´ ë¬¸ìì—´:"+p.toString());
+		Point p = new Point();
+		System.out.println("Å¬·¡½ºÀÌ¸§ : " + p.getClass());
+		System.out.println("ÇØ½¬ÄÚµå : " + p.hashCode());
+		//toString »ı·«°¡´É
+		System.out.println("°´Ã¼¹®ÀÚ¿­ : " + p.toString());
+		Point p1 = new Point();
+		System.out.println("Å¬·¡½ºÀÌ¸§ : " + p1.getClass());
+		System.out.println("ÇØ½¬ÄÚµå : " + p1.hashCode());
+		System.out.println("°´Ã¼¹®ÀÚ¿­ : " + p1.toString());
+		String s = new String("±İ¿äÀÏ");
+		System.out.println("°´Ã¼¹®ÀÚ¿­ : " + s.toString());
 		
 		
-		Point p1=new Point();
-		System.out.println("í´ë˜ìŠ¤ ì´ë¦„:"+p1.getClass());
-		System.out.println("í•´ì‰¬ì½”ë“œ:"+p1.hashCode());
-		//toStringìƒëµê°€ëŠ¥
-		System.out.println("ê°ì²´ ë¬¸ìì—´:"+p1.toString());
-		String s=new String("ê¸ˆìš”ì¼");
-		System.out.println("ê°ì²´ë¬¸ìì—´:"+s.toString());
 		
 		
 	}
-	
-
 }

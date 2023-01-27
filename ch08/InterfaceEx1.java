@@ -1,7 +1,7 @@
 package ch08;
 
 interface Calc{
-	void plus(int a, int b);//자동 추상메소드
+	void plus(int a, int b);//�ڵ� �߻�޼ҵ�
 	
 }
 class Function /*extends Object*/ implements Calc{

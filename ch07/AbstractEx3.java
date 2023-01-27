@@ -1,7 +1,7 @@
 package ch07;
 
 abstract class Abstract3{
-	//ì¼ë°˜ í•„ë“œ
+	//ÀÏ¹İ ÇÊµå
 	int a;
 	void prn() {
 		

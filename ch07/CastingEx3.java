@@ -2,32 +2,32 @@ package ch07;
 
 class Animal{
 	void move() {
-		System.out.println("ë™ë¬¼ì•„ ì›€ì§ì—¬ë¼");
+		System.out.println("µ¿¹°¾Æ ¿òÁ÷¿©¶ó");
 	}
 	
 }
 class Bird extends Animal{
-	String name="ìƒˆ";
+	String name="»õ";
 	@Override
 	void move() {
 		//super.move();
-		System.out.println(name+"ë‚ ì•„ë¼~");
+		System.out.println(name+"³¯¾Æ¶ó~");
 	}
 }
 class Fish extends Animal{
-	String name="ë¬¼ê³ ê¸°";
+	String name="¹°°í±â";
 	@Override
 	void move() {
 		//super.move();
-		System.out.println(name+"í—¤ì—„ì³ë¼~");
+		System.out.println(name+"Çì¾öÃÄ¶ó~");
 	}
 }
 class Cheetah extends Animal{
-	String name="ì¹˜íƒ€";
+	String name="Ä¡Å¸";
 	@Override
 	void move() {
 		//super.move();
-		System.out.println(name+"ë‹¬ë ¤ë¼~");
+		System.out.println(name+"´Ş·Á¶ó~");
 	}
 }
 
@@ -35,13 +35,13 @@ class Cheetah extends Animal{
 public class CastingEx3 {
 
 	public static void main(String[] args) {
-		//ì• ë‹ˆë©€ íƒ€ì…ì˜ ê°ì²´ë¥¼ ì €ì¥ í•  ìˆ˜ ìˆëŠ” ì¹¸ì„ 3ê°œ ë§Œë“¬
+		//¾Ö´Ï¸Ö Å¸ÀÔÀÇ °´Ã¼¸¦ ÀúÀå ÇÒ ¼ö ÀÖ´Â Ä­À» 3°³ ¸¸µë
 		Animal ani[]=new Animal[3];
 		ani[0]=new Bird();
 		ani[1]=new Fish();
 		ani[2]=new Cheetah();
 		for (int i=0; i<ani.length; i++) {
-			ani[i].move();//ë™ì  ë°”ì¸ë”©:í•˜ìœ„ í´ë˜ìŠ¤ì˜ ë©”ì†Œë“œë¥¼ í˜¸ì¶œ
+			ani[i].move();//µ¿Àû ¹ÙÀÎµù:ÇÏÀ§ Å¬·¡½ºÀÇ ¸Ş¼Òµå¸¦ È£Ãâ
 		}
 		
 	}

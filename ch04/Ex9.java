@@ -3,7 +3,7 @@ package ch04;
 public class Ex9 {
 
 	public static void main(String[] args) {
-		//whileë¬¸ ì´ìš©í•˜ì—¬ 1~10ê¹Œì§€ í•©êµ¬í•˜ê¸°
+		//while¹® ÀÌ¿ëÇÏ¿© 1~10±îÁö ÇÕ±¸ÇÏ±â
 		int sum=0;
 		int i=1;
 		while(i<11) {
@@ -13,9 +13,9 @@ public class Ex9 {
 		System.out.println("sum:"+sum);
 		/*
 		while(ture) {
-			System.out.println("whileë¬¸ ì‹¤í–‰");
+			System.out.println("while¹® ½ÇÇà");
 			if(ture) {
-				break;//ë°˜ë³µë¬¸ë¹ ì ¸ë‚˜ê°
+				break;//¹İº¹¹®ºüÁ®³ª°¨
 			}
 		}
 		*/

@@ -1,44 +1,39 @@
 package ch11;
 
-
-class Point3{
-	
-}
-
-
+class Point3{}
 
 public class StringEx1 {
 	public static void main(String[] args) {
-		Point3 p1=new Point3();
-		Point3 p2=new Point3();
-		System.out.println(p1==p2);//ê°ì²´ ì£¼ì†Œê°’ì´ ë‹¬ë¼ì„œ falseëœ¸
-		int a=10;
-		int b=10;//ìë°” ê¸°ë³¸í˜•ì´ë¼ ê°’ì„ ë¹„êµí•˜ê¸°ë•Œë¬¸ì— true
+		Point3 p1 = new Point3();
+		Point3 p2 = new Point3();
+		System.out.println(p1==p2);
+		int a = 10;
+		int b = 10;
 		System.out.println(a==b);
-		System.out.println("----------------");
-		//new ì—°ì‚°ì ì—†ì´ ê°ì²´ë¥¼ ìƒì„±í•˜ëŠ” ìœ ì¼í•œ í´ë˜ìŠ¤:String
-		//new ì—†ì´ ë§Œë“¤ì–´ì§„ String ê°ì²´ëŠ” String ì €ì¥ì†Œì— ìƒì„±í• ë•Œ ë™ì¼í•œ ë¬¸ìì—´ ê°’ì´ ìˆìœ¼ë©´ ì°¸ì¡°ë¥¼ í•˜ê²Œëœë‹¤.
-		
-		String s1=new String("Java");
-		String s2=new String("Java");
-		
-		String s3="Java";//ìƒì„±
-		String s4="Java";//ì¬ì‚¬ìš©
+		System.out.println("------");
+		/*new ¿¬»êÀÚ ¾øÀÌ °´Ã¼¸¦ »ı¼ºÇÏ´Â À¯ÀÏÇÑ Å¬·¡½º
+		*new ¾øÀÌ ¸¸µé¾îÁö String °´Ã¼¸¦ String ÀúÀå¼Ò¿¡
+		*¸¸µé¾îÁö°í »ı¼ºÇÒ¶§ µ¿ÀÏÇÑ ¹®ÀÚ¿­ °ªÀÌ ÀÖÀ¸¸é ÂüÁ¶
+		*/
+		String s1 = new String("Java");
+		String s2 = new String("Java");
+		String s3 = "Java";//»ı¼º
+		String s4 = "Java";//Àç»ç¿ë
 		System.out.println(s1==s2);
 		System.out.println(s3==s4);
 		System.out.println(s1==s3);
-		
-		System.out.println("----------------");
-		//ê°ì²´ì˜ ë¬¸ìì—´ ë‚´ìš©ì„ ë¹„êµ
+		System.out.println("------------");
+		//°´Ã¼ÀÇ ¹®ÀÚ¿­À» ³»¿ëÀÌ ºñ±³
 		System.out.println(s1.equals(s2));
 		System.out.println(s1.equals(s3));
-		System.out.println(s3.equals(s4));//st
+		System.out.println(s3.equals(s4));
 		
-		System.out.println(p1.equals(p2));//obj
-		System.out.println("----------------");
-		String s5="APPLE";
-		String s6="apple";
+		System.out.println(p1.equals(p2));
+		System.out.println("---------------");
+		String s5 = "APPLE";
+		String s6 = "apple";
 		System.out.println(s5.equals(s6));
-		System.out.println(s5.equalsIgnoreCase(s6));//ëŒ€ì†Œë¬¸ì ë¬´ì‹œí•˜ê³  ë¹„êµ
+		System.out.println(s5.equalsIgnoreCase(s6));
+
 	}
 }

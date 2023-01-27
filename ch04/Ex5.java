@@ -7,16 +7,16 @@ public class Ex5 {
 		
 		switch (month) {
 		case "january":
-			System.out.println("1ì›”ë‹¬");
+			System.out.println("1¿ù´Ş");
 			break;
 		case "february":
-			System.out.println("2ì›”ë‹¬");
+			System.out.println("2¿ù´Ş");
 			break;
 		case "march":
-			System.out.println("3ì›”ë‹¬");
+			System.out.println("3¿ù´Ş");
 			break;
 		default:
-			System.out.println("4ì›”ì´í›„");	
+			System.out.println("4¿ùÀÌÈÄ");	
 		}
 	}
 

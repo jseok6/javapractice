@@ -1,7 +1,7 @@
 package ch07;
 
 
-class Car1{//2ëŒ€í´ëž˜ìŠ¤
+class Car1{//2´ëÅ¬·¡½º
 	int velocity;
 	void speedUp() {
 		velocity++;
@@ -28,7 +28,7 @@ class Taxi1 extends Car1 {
 class Bus1 extends Car1 {
 	@Override
 	void speedUp() {
-		super.speedUp();//ìƒìœ„ë©”ì†Œë“œí˜¸ì¶œ
+		super.speedUp();//»óÀ§¸Þ¼ÒµåÈ£Ãâ
 		if(velocity>100)
 			velocity=100;
 	}

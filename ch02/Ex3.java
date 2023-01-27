@@ -3,14 +3,14 @@ package ch02;
 public class Ex3 {
 
 	public static void main(String[] args) {
-		//ë°ì´í„° íƒ€ì…:ê¸°ë³¸í˜•(8ê°œ)+ì°¸ì¡°í˜•
-		//ì •ìˆ˜íƒ€ì…
-		byte b=10;//127ê¹Œì§€
+		//µ¥ÀÌÅÍ Å¸ÀÔ:±âº»Çü(8°³)+ÂüÁ¶Çü
+		//Á¤¼öÅ¸ÀÔ
+		byte b=10;//127±îÁö
 		
 		short s=10;
 		int i=20;
 		long l=30L;
-		//ì‹¤ìˆ˜ íƒ€ì…
+		//½Ç¼ö Å¸ÀÔ
 		float f=2.33f;
 		double d=3.14;
 		//char,boolean

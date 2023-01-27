@@ -3,20 +3,21 @@ package ch10;
 public class ExceptionEx1 {
 
 	public static void main(String[] args) {
-		try {//ì˜ˆì™¸ê°€ ì¼ì–´ë‚  ê°€ëŠ¥ì„±ì´ ìˆëŠ” ì½”ë“œê°€ ë“¤ì–´ê°€ëŠ” ì˜ì–µ
+		try {//¿¹¿Ü°¡ ÀÏ¾î³¯ °¡´É¼ºÀÌ ÀÖ´Â ÄÚµå°¡ µé¾î°¡´Â ¿µ¾ï
 			int a=10;
 			int b=0;
 			System.out.println("a+b= "+(a+b));
 			System.out.println("a-b= "+(a-b));
 			System.out.println("a*b= "+(a*b));
 			System.out.println("a/b= "+(a/b));
-		} catch (Exception e) {//ì˜ˆì™¸ê°€ ì¼ì–´ë‚˜ë©´ ì‹¤í–‰ë˜ëŠ” ì˜ì—­
-			System.err.println("0ìœ¼ë¡œ ë‚˜ëˆ„ë©´ ì•ˆë˜ìš”");
+		} catch (Exception e) {//¿¹¿Ü°¡ ÀÏ¾î³ª¸é ½ÇÇàµÇ´Â ¿µ¿ª
+			System.err.println("0À¸·Î ³ª´©¸é ¾ÈµÇ¿ä");
 		
 			//System.err.println(e.getMessage());
 		}
-		System.out.println("ì„±ê³µ");
+		System.out.println("¼º°ø");
 		
 	}
 
 }
+

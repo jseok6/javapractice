@@ -9,12 +9,12 @@ public class ExceptionEx2 {
 			arr[1]=10;
 			arr[2]=10;
 			arr[3]=10;
-			System.out.println("ì‹¤í–‰ë˜ë‚˜ìš”?");
+			System.out.println("½ÇÇàµÇ³ª¿ä?");
 		} 
 		catch (Exception e) {
-			System.out.println("ë°°ì—´ ì˜ˆì™¸ì…ë‹ˆë‹¤.");
+			System.out.println("¹è¿­ ¿¹¿ÜÀÔ´Ï´Ù.");
 		}
-		finally {//ì˜ˆì™¸ì— ê´€ê³„ì—†ì´ ë¬´ì¡°ê±´ ì‹¤í–‰
+		finally {//¿¹¿Ü¿¡ °ü°è¾øÀÌ ¹«Á¶°Ç ½ÇÇà
 			System.out.println("finally~");
 		}
 

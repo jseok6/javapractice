@@ -3,7 +3,7 @@ package ch04;
 public class Ex11 {
 
 	public static void main(String[] args) {
-		//1~10ì‚¬ì´ì˜ ì§ìˆ˜ ì¶œë ¥
+		//1~10»çÀÌÀÇ Â¦¼ö Ãâ·Â
 		for(int i=1; i<11; i++)
 		{
 			if(i%2==0)
@@ -21,7 +21,7 @@ public class Ex11 {
 			System.out.println(i);
 		}
 		System.out.println("\n----------------------------");
-		//1~20ì‚¬ì´ 3ì˜ë°°ìˆ˜ì™€ í•©ê³¼ ì‹ ì¶œë ¥.continueì‚¬ìš©í•´ì„œ
+		//1~20»çÀÌ 3ÀÇ¹è¼ö¿Í ÇÕ°ú ½Ä Ãâ·Â.continue»ç¿ëÇØ¼­
 		int sum=0;
 		for(int i=1; i<21; i++)
 		{

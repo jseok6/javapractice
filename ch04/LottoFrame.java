@@ -40,10 +40,10 @@ implements ActionListener{
 
 	public void paint(Graphics g){
 		g.setColor(Color.white);
-		Font f = new Font("ê¶ì„œì²´",Font.BOLD,25);
+		Font f = new Font("±Ã¼­Ã¼",Font.BOLD,25);
 		g.setFont(f);
 		if(lotto[0]==0){
-			g.drawString("ë¡œë˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì„¸ìš”.", 50, 100);
+			g.drawString("·Î¶Ç ¹öÆ°À» Å¬¸¯ÇÏ¼¼¿ä.", 50, 100);
 			return;
 		}
 		for (int i = 0, x =50; i < lotto.length; i++, x+=50) {
@@ -59,8 +59,8 @@ implements ActionListener{
 
 	public int[] getLotto(){
 		int lotto[]=new int[6];
-		//ë°°ì—´ ë°‘ì— í•­ìƒ forë¬¸ ìˆë‹¤.
-		//ì¤‘ë³µë¡œì§ ì¶”ê°€
+		//¹è¿­ ¹Ø¿¡ Ç×»ó for¹® ÀÖ´Ù.
+		//Áßº¹·ÎÁ÷ Ãß°¡
 		Random r=new Random();
 		for (int i = 0; i < lotto.length; i++) {
 			lotto[i]=r.nextInt(45)+1;//1~45
@@ -70,7 +70,7 @@ implements ActionListener{
 				}
 			}
 		}
-		Arrays.sort(lotto);//ì˜¤ë¦„ì°¨ìˆœì •ë ¬
+		Arrays.sort(lotto);//¿À¸§Â÷¼øÁ¤·Ä
 		return lotto;
 	}
 }

@@ -1,8 +1,8 @@
 package ch06;
 
 class Method2{
-	//ë©”ì†Œë“œ ì˜¤ë²„ë¡œë”©(over loading)
-	//ë™ì¼í•œ ë©”ì†Œë“œëª…ìœ¼ë¡œ ë§¤ê°œë³€ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ë‹¤ë¥´ê²Œ ì„ ì–¸.
+	//¸Ş¼Òµå ¿À¹ö·Îµù(over loading)
+	//µ¿ÀÏÇÑ ¸Ş¼Òµå¸íÀ¸·Î ¸Å°³º¯¼öÀÇ °³¼ö¸¦ ´Ù¸£°Ô ¼±¾ğ.
 	void prn(int a) {
 		System.out.println(a);
 		return;
@@ -25,7 +25,7 @@ class Method2{
 public class MethodEx2 {
 
 	public static void main(String[] args) {
-		//Mathí´ë˜ìŠ¤ì— absë©”ì†Œë“œëŠ” ì ˆëŒ€ê°’ ë¦¬í„´
+		//MathÅ¬·¡½º¿¡ abs¸Ş¼Òµå´Â Àı´ë°ª ¸®ÅÏ
 		int a=Math.abs(-10);
 		double d= Math.abs(3.14);
 		Method2 mt=new Method2();

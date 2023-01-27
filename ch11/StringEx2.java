@@ -1,74 +1,61 @@
 package ch11;
 
 public class StringEx2 {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String str="Java Programming";
-		int len=str.length();
-		System.out.println("len:"+len);
+		String str = "Java Programming";
+		
+		int len = str.length();
+		System.out.println("len : " + len);
 		System.out.println(str.toLowerCase());
 		System.out.println(str.toUpperCase());
 		
-		String str2=str.substring(5);
-		String str3=str.substring(5,10);
-		System.out.println("str2:"+str2);
-		System.out.println("str3:"+str3);
+		String str2 = str.substring(5);
+		String str3 = str.substring(5, 10);
+		System.out.println("str2 : " + str2);
+		System.out.println("str3 : " + str3);
 		
-		//8ë²ˆì§¸ ë¬¸ì ë¦¬í„´
-		char c1=str.charAt(8);
-		System.out.println("8ë²ˆì§¸ë¬¸ì:"+c1);
-		//ì§ìˆ˜ìë¦¬ ë¬¸ìë§Œ ì¶œë ¥í•˜ì‹œì˜¤.
-
+		//8¹øÂ° ¹®ÀÚ
+		char c1 = str.charAt(8);
+		System.out.println("8¹øÂ° ¹®ÀÚ : " + c1);
+		//Â¦¼ö ÀÚ¸® ¹®ÀÚ¸¸ Ãâ·ÂÇÏ½Ã¿À.
 		for (int i = 0; i < str.length(); i++) {
 			if(i%2==0)
 				System.out.print(str.charAt(i));
 		}
-		//aë¬¸ìëŠ” ëª‡ë²ˆì§¸ ìë¦¬ì— ìˆëŠ”ê°€?
+		//a¹®ÀÚ´Â ¸î¹øÂ° ÀÚ¸®¿¡ ÀÖ´Â°¡?
 		//Java Programming
-		int idx1=str.indexOf('a');
-		System.out.println("\n"+"idx1:"+idx1);
-		int idx2=str.lastIndexOf('a');
-		System.out.println("\n"+"idx2:"+idx2);
-		
-		//aë¥¼ që¡œ ë³€í™˜ì¶œë ¥í•˜ì‹œì˜¤.:charAt
-		String idx3=str.replace('a','q');
-		System.out.println("\n"+"idx3:"+idx3);
-		
-		//charAtë°©ë²•
+		int idx1 = str.indexOf('a');
+		System.out.println("\n"+"idx1 : " + idx1);
+		int idx2 =  str.lastIndexOf('a');
+		System.out.println("idx2 : " + idx2);
+		//a¸¦ q·Î º¯È¯ Ãâ·ÂÇÏ½Ã¿À. : charAt , ?
+		String str4 = str.replace('a', 'q');
+		System.out.println(str4);
 		for (int i = 0; i < str.length(); i++) {
 			if(str.charAt(i)=='a') {
 				System.out.print('q');
-			}
-			else {
+			}else {
 				System.out.print(str.charAt(i));
 			}
-		}//for
-		System.out.println("----------------");
-		//strì„ ë°˜ëŒ€ë¡œ ì¶œë ¥í•˜ì‹œì˜¤ 
-		for (int i=str.length()-1; i>=0; i--) {
+		}//--for
+		System.out.println("------------------------");
+		//strÀ» ¹İ´ë·Î Ãâ·Â : chatAt, ?
+		for (int i = len-1; i >= 0; i--) {
 			System.out.print(str.charAt(i));
 		}
-		StringBuffer sb=new StringBuffer(str);
+		StringBuffer sb = new StringBuffer(str);
 		System.out.println("\n"+sb.reverse());
 		
-		String str5="Java&JSP&Android&Iot&Spring";
-		String str6[]=str5.split("&");//ë¬¸ì &ê¸°ì¤€ìœ¼ë¡œ ë‚˜ëˆ„ê¸°
-		for (int i=0; i<str6.length; i++)
-		{
+		String str5 =  "Java&JSP&Android&Iot&Spring";
+		String str6[] = str5.split("&");
+		for (int i = 0; i < str6.length; i++) {
 			System.out.println(str6[i]);
 		}
-		
-		String str7="          JSPStudy           ";//ê³µë°±ì œê±°
+		String str7 = "          JSPStudy           ";
 		System.out.println("***"+str7.trim()+"***");
-		
-		int idx4=22;//ì •ìˆ˜ë¥¼ ë¬¸ìë¡œë³€í™˜
-		String str8=String.valueOf(idx4);
-		String str9=idx4+"";
-		System.out.println(str8+":"+str9);
-		
-		
-		
+		int idx3 = 22;//Á¤¼ö¸¦ ¹®ÀÚ·Î º¯È¯
+		String str8 = String.valueOf(idx3);
+		String str9 = idx3+"";
+		System.out.println(str8 + " : " + str9);
 	}
-
 }

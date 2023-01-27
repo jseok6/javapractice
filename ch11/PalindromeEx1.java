@@ -1,88 +1,45 @@
 package ch11;
 
-import java.lang.*;
+import java.util.Arrays;
 
 public class PalindromeEx1 {
+
 	static final int MAX = 100000;
+
 	public static void main(String[] args) {
 		/*
-		 * ì•ì—ì„œë¶€í„° ì½ì„ ë•Œë‚˜ ë’¤ì—ì„œë¶€í„° ì½ì„ ë•Œë‚˜ ëª¨ì–‘ì´ ê°™ì€ ìˆ˜ë¥¼ ëŒ€ì¹­ìˆ˜(palindrome)ë¼ê³  í•©ë‹ˆë‹¤.
-		 *   ëŒ€ì¹­ìˆ˜(palindrome)ì¸ 585ëŠ” 2ì§„ìˆ˜ë¡œ ë‚˜íƒ€ë‚´ë„ 1001001001ê°€ ë˜ì–´ ì—¬ì „íˆ ëŒ€ì¹­ìˆ˜ì…ë‹ˆë‹¤.
-        */
+		 * ¾Õ¿¡¼­ºÎÅÍ ÀĞÀ» ¶§³ª µÚ¿¡¼­ºÎÅÍ ÀĞÀ» ¶§³ª ¸ğ¾çÀÌ °°Àº ¼ö¸¦ ´ëÄª¼ö(palindrome)¶ó°í ÇÕ´Ï´Ù. ´ëÄª¼ö(palindrome)ÀÎ
+		 * 585´Â 2Áø¼ö·Î ³ªÅ¸³»µµ 1001001001°¡ µÇ¾î ¿©ÀüÈ÷ ´ëÄª¼öÀÔ´Ï´Ù.
+		 */
+
+		// ¹®Á¦1.10Áø¹ıÀÇ ´ëÄª¼öÀÎ 100,000 ÀÌÇÏ ¼ıÀÚÀÇ ÇÕÀº ¾ó¸¶ÀÔ´Ï±î?
+
+		// ¹®Á¦2.2Áø¹ıÀÇ ´ëÄª¼öÀÎ 100,000 ÀÌÇÏ ¼ıÀÚÀÇ ÇÕÀº ¾ó¸¶ÀÔ´Ï±î?
+
+		// ¹®Á¦3.10Áø¹ı°ú 2Áø¹ıÀ¸·Î ¸ğµÎ ´ëÄª¼öÀÎ 100,000 ÀÌÇÏ ¼ıÀÚÀÇ ÇÕÀº ¾ó¸¶ÀÔ´Ï±î?
 		
-		//ë¬¸ì œ1.10ì§„ë²•ì˜ ëŒ€ì¹­ìˆ˜ì¸ 100,000 ì´í•˜ ìˆ«ìì˜ í•©ì€ ì–¼ë§ˆì…ë‹ˆê¹Œ?
-		
-//		int sum=0;
-//		for (int i=0; i<MAX; i++)
-//		{
-//			int temp=0;
-//			String str=String.valueOf(i);
-//			for(int j=0; j<str.length()/2; j++) {
-//				if(str.charAt(j)!=str.charAt(str.length()-1-j)) {
-//					temp=1;
-//					break;
-//				}
-//			}
-//			if(temp==0) {
-//				sum+=i;
-//				
-//			}
-//			
-//		}
-//		System.out.println(sum);
-		
-		
-		//ë¬¸ì œ2.2ì§„ë²•ì˜ ëŒ€ì¹­ìˆ˜ì¸ 100,000 ì´í•˜ ìˆ«ìì˜ í•©ì€ ì–¼ë§ˆì…ë‹ˆê¹Œ?
-//		int sum=0;
-//		for(int i=0; i<MAX; i++) {
-//			int temp=0;
-//			String brs = Integer.toBinaryString(i);
-//			for (int j=0; j<brs.length()/2; j++)
-//			{
-//				if(brs.charAt(j)!=brs.charAt(brs.length()-1-j)) 
-//				{
-//					temp=1;
-//					break;
-//				}
-//			}
-//			if (temp==0 ) 
-//			{
-//				sum+=Integer.parseInt(brs,2);
-//			}
-//		}
-//		System.out.println(sum);
-		
-		//ë¬¸ì œ3.10ì§„ë²•ê³¼ 2ì§„ë²•ìœ¼ë¡œ ëª¨ë‘ ëŒ€ì¹­ìˆ˜ì¸ 100,000 ì´í•˜ ìˆ«ìì˜ í•©ì€ ì–¼ë§ˆì…ë‹ˆê¹Œ?
-		int sum=0;
-		for (int i=0; i<MAX; i++)
-		{
-			int temp=0;
-			String str=String.valueOf(i);
-			for (int j=0; j<str.length()/2; j++)
-			{
-				if(str.charAt(j)!=str.charAt(str.length()-1-j))
-				{
-					temp=1;
-					break;
-				}
+		int[] answer = new int[3];
+		PalindromeEx1 pe = new PalindromeEx1();
+		for (int i = 1; i <= MAX; i++) {
+			if (pe.isPalindrome(i, 10)) {
+				answer[0] += i;
 			}
-			if (temp==0)
-			{
-				String brs=Integer.toBinaryString(i);
-				for(int j=0; j<brs.length()/2; j++)
-				{
-					if(brs.charAt(j)!=brs.charAt(brs.length()-1-j))
-					{
-						temp=1;
-						break;
-					}
-				}
-				if (temp==0)
-				{
-					sum+=Integer.parseInt(brs,2);
-				}
+			if (pe.isPalindrome(i, 2)) {
+				answer[1] += i;
+			}
+			if (pe.isPalindrome(i, 2) && pe.isPalindrome(i, 10)) {
+				answer[2] += i;
 			}
 		}
-		System.out.println(sum);
+		System.out.println(Arrays.toString(answer));
+	}
+
+	public boolean isPalindrome(int x, int numberType) {
+		StringBuilder sb = new StringBuilder(Integer.toString(x, numberType));
+		if (sb.toString().equals(sb.reverse().toString())) {
+			return true;
+		}
+		else
+			return false;
 	}
 }

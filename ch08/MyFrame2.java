@@ -14,14 +14,14 @@ public class MyFrame2 extends MFrame implements ActionListener{
 	boolean flag=false;
 	public MyFrame2() {
 		btn=new Button("Button2");
-		add(btn,BorderLayout.SOUTH);//ë²„íŠ¼ì•„ë˜ë¡œ
+		add(btn,BorderLayout.SOUTH);//¹öÆ°¾Æ·¡·Î
 		//add(btn,"South");
-		setBackground(Color.GREEN);//ë°°ê²½ìƒ‰
+		setBackground(Color.GREEN);//¹è°æ»ö
 		//MyAction ma=new MyAction();
 		//btn.addActionListener(ma);
-		//ë‚´ ìì‹ ì´ ActionListeneríƒ€ì…ì´ë¯€ë¡œ thisê°€ ê°€ëŠ¥
-		//ë²„íŠ¼ì„ í´ë¦­ì„ í•˜ë©´ ActionEvent ê°ì²´ê°€ ë‚´ë¶€ì ìœ¼ë¡œ ìƒì„±ë¨
-		btn.addActionListener(this);//actionperformed ì—°ê²° ë©”ì†Œë“œì„
+		//³» ÀÚ½ÅÀÌ ActionListenerÅ¸ÀÔÀÌ¹Ç·Î this°¡ °¡´É
+		//¹öÆ°À» Å¬¸¯À» ÇÏ¸é ActionEvent °´Ã¼°¡ ³»ºÎÀûÀ¸·Î »ı¼ºµÊ
+		btn.addActionListener(this);//actionperformed ¿¬°á ¸Ş¼ÒµåÀÓ
 		
 	}
 //class MyAction implements ActionListener{

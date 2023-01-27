@@ -3,7 +3,7 @@ package ch03;
 public class Ex5 {
 
 	public static void main(String[] args) {
-		//ëŒ€ìž…ì—°ì‚°ìž
+		//´ëÀÔ¿¬»êÀÚ
 		int a=10;
 		int b=5;
 		a=a+10;
@@ -14,9 +14,9 @@ public class Ex5 {
 		System.out.println(a);
 		b%=3;
 		System.out.println(b);
-		//ì‚¼í•­ì—°ì‚°ìž
+		//»ïÇ×¿¬»êÀÚ
 		int c=10;
-		String s=(c%2==0)?"ì§ìˆ˜":"í™€ìˆ˜";
+		String s=(c%2==0)?"Â¦¼ö":"È¦¼ö";
 		int d=(c>0)?c:-c;
 		
 	}

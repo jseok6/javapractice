@@ -1,17 +1,17 @@
 package ch06;
 
-class SuperClass3{//ë¶€ëª¨   SuperClass3ì˜ ë¶€ëª¨ëŠ” Object
+class SuperClass3{//ºÎ¸ð   SuperClass3ÀÇ ºÎ¸ð´Â Object
 	public SuperClass3() {
 		super();
-		System.out.println("Super ìƒì„±ìž");
+		System.out.println("Super »ý¼ºÀÚ");
 	}
 	
 	
 }
-class SubClass3 extends SuperClass3{//ìžì‹
+class SubClass3 extends SuperClass3{//ÀÚ½Ä
 	public SubClass3() {
-		super();//ìƒëžµ:ë°˜ë“œì‹œ ìƒì„±ìžì˜ ì²«ë²ˆì§¸ ë¼ì¸ì— ì™€ì•¼ë¨.
-		System.out.println("Sub ìƒì„±ìž");
+		super();//»ý·«:¹Ýµå½Ã »ý¼ºÀÚÀÇ Ã¹¹øÂ° ¶óÀÎ¿¡ ¿Í¾ßµÊ.
+		System.out.println("Sub »ý¼ºÀÚ");
 		
 	}
 }
@@ -25,6 +25,6 @@ public class ConstructorEx3 {
 	}
 
 }
-//ìžë°”ì˜ ê°ì²´ìƒì„±ì€ ë¶€ëª¨ê°ì²´ë¶€í„° ë¨¼ì € ìƒì„±ëœë‹¤
-//ê·¸ëŸ¬ë¯€ë¡œ ë¶€ëª¨ìƒì„±ìžë¶€í„° ë¨¼ì € ì‹¤í–‰ë˜ê³  ìžì‹ìƒì„±ìžëŠ” ë§ˆì§€ë§‰ì— ì‹¤í–‰ë¨
+//ÀÚ¹ÙÀÇ °´Ã¼»ý¼ºÀº ºÎ¸ð°´Ã¼ºÎÅÍ ¸ÕÀú »ý¼ºµÈ´Ù
+//±×·¯¹Ç·Î ºÎ¸ð»ý¼ºÀÚºÎÅÍ ¸ÕÀú ½ÇÇàµÇ°í ÀÚ½Ä»ý¼ºÀÚ´Â ¸¶Áö¸·¿¡ ½ÇÇàµÊ
 //Obj->Super->Sub

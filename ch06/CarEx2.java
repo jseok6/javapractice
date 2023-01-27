@@ -1,7 +1,7 @@
 package ch06;
 
 
-//í´ëž˜ìŠ¤ì„ ì–¸->í•„ë“œ&ë©”ì†Œë“œ->ê°ì²´ìƒì„±(new,í•„ë“œ ë° ë©”ì†Œë“œì‚¬ìš©)
+//Å¬·¡½º¼±¾ð->ÇÊµå&¸Þ¼Òµå->°´Ã¼»ý¼º(new,ÇÊµå ¹× ¸Þ¼Òµå»ç¿ë)
 class Car2{
 	String name;
 	int speed;
@@ -14,7 +14,7 @@ class Car2{
 	
 	
 }
-//í´ëž˜ìŠ¤ ì„ ì–¸ì¢…ë£Œ
+//Å¬·¡½º ¼±¾ðÁ¾·á
 public class CarEx2 {
 
 	public static void main(String[] args) {
@@ -25,10 +25,10 @@ public class CarEx2 {
 			Car2 cr2=new Car2();
 			//System.out.println(cr2.toString());
 		}
-		//ìš”ì²­ê°’ ì†Œë¬¸ìž-> ëŒ€ë¬¸ìžë¡œ ì¶œë ¥
+		//¿äÃ»°ª ¼Ò¹®ÀÚ-> ´ë¹®ÀÚ·Î Ãâ·Â
 		String s="waerawerewar";
 		System.out.println(s.toUpperCase());
-		//32 10ì§„ìˆ˜ë¥¼ 2ì§„ìˆ˜ë¡œë³€í™˜
+		//32 10Áø¼ö¸¦ 2Áø¼ö·Îº¯È¯
 		Integer i= new Integer(32);
 		String str=i.toBinaryString(32);
 		System.out.println(str);

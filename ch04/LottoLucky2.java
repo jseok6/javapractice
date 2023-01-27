@@ -14,7 +14,7 @@ public class LottoLucky2 {
 	}
 
 	
-	//ìë£Œêµ¬ì¡°:Collection ê¸°ëŠ¥
+	//ÀÚ·á±¸Á¶:Collection ±â´É
 	public static Object[] getLotto() {
 		TreeSet<Integer> tr= new TreeSet<Integer>();
 		for(int i=0; tr.size()<6; i++)

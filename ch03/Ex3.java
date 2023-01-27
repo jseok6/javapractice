@@ -3,7 +3,7 @@ package ch03;
 public class Ex3 {
 
 	public static void main(String[] args) {
-		//ë°°ì—´:ë™ì¼í•œ data typeì„ í•˜ë‚˜ì˜ ë³€ìˆ˜ë¡œ ë¬¶ì–´ ë†“ì€ ê¸°ëŠ¥
+		//¹è¿­:µ¿ÀÏÇÑ data typeÀ» ÇÏ³ªÀÇ º¯¼ö·Î ¹­¾î ³õÀº ±â´É
 		
 //System.out.println(args[0]);
 //System.out.println(args[1]);

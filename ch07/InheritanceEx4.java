@@ -9,7 +9,7 @@ class B4{
 class C4 extends A4/*,B4*/{
 	
 }
-//ì¸í„°í˜ì´ìŠ¤
+//ÀÎÅÍÆäÀÌ½º
 interface D4{
 
 }

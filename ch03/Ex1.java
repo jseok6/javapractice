@@ -13,15 +13,15 @@ public class Ex1 {
 		System.out.println(a*b);
 		System.out.println(a/b);
 		System.out.println(a%b);
-		//ì…ë ¥í•œ ê°’ì´ í™€ìˆ˜ì¸ì§€ ì§ìˆ˜ì¸ì§€ ì¶œë ¥í•˜ì„¸ìš”.
+		//ÀÔ·ÂÇÑ °ªÀÌ È¦¼öÀÎÁö Â¦¼öÀÎÁö Ãâ·ÂÇÏ¼¼¿ä.
 		Scanner sc =new Scanner(System.in);
-		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
+		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
 		int d = sc.nextInt();
 		if (d%2==0) {
-			System.out.println(d+"ì§ìˆ˜ì…ë‹ˆë‹¤.");
+			System.out.println(d+"Â¦¼öÀÔ´Ï´Ù.");
 		}
 		else {
-			System.out.println(d+"í™€ìˆ˜ì…ë‹ˆë‹¤.");
+			System.out.println(d+"È¦¼öÀÔ´Ï´Ù.");
 		}
 	}
 

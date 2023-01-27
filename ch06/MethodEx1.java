@@ -22,8 +22,8 @@ public class MethodEx1 {
 
 	public static void main(String[] args) {
 		Method1 m= new Method1();
-		int a=m.abs(-10);//ë¦¬í„´í˜•ì´ ìˆëŠ” ë©”ì†Œë“œë¼ë„ ê°’ì„ ë°˜ë“œì‹œ ë°›ì„ í•„ìš”ê°€ ì—†ë‹¤.
-		System.out.println(a);//outì€ í•„ë“œ printlnì€ ë©”ì†Œë“œ
+		int a=m.abs(-10);//¸®ÅÏÇüÀÌ ÀÖ´Â ¸Ş¼Òµå¶óµµ °ªÀ» ¹İµå½Ã ¹ŞÀ» ÇÊ¿ä°¡ ¾ø´Ù.
+		System.out.println(a);//outÀº ÇÊµå printlnÀº ¸Ş¼Òµå
 		m.prn(10, 20);
 	}
 

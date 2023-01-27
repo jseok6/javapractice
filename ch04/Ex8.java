@@ -3,11 +3,11 @@ package ch04;
 public class Ex8 {
 
 	public static void main(String[] args) {
-		//ë¬¸ì œ1.1~30ì‚¬ì´ê°’ì¤‘ 3ì˜ë°°ìˆ˜í•© 
-		//2. 1~30ì‚¬ì´ ê°’ì¤‘ ì§ìˆ˜ì™€ í™€ìˆ˜ì˜ í•© ê°ê° êµ¬í•˜ê¸°
-		//3.1~50ì‚¬ì´ì˜ 3,6,9ì˜ í•©
+		//¹®Á¦1.1~30»çÀÌ°ªÁß 3ÀÇ¹è¼öÇÕ 
+		//2. 1~30»çÀÌ °ªÁß Â¦¼ö¿Í È¦¼öÀÇ ÇÕ °¢°¢ ±¸ÇÏ±â
+		//3.1~50»çÀÌÀÇ 3,6,9ÀÇ ÇÕ
 		/*
-		//ë¬¸ì œ1ë²ˆ
+		//¹®Á¦1¹ø
 		int num=1,total=0;
 		for (;num<31;num++) {
 			if (num%3==0) {
@@ -17,8 +17,8 @@ public class Ex8 {
 		System.out.println(total);
 		*/
 		
-		/*ë¬¸ì œ 2ë²ˆ
-		int num=1,even=0,odd=0;//evenì§ìˆ˜í•© odd í™€ìˆ˜í•©
+		/*¹®Á¦ 2¹ø
+		int num=1,even=0,odd=0;//evenÂ¦¼öÇÕ odd È¦¼öÇÕ
 		for (;num<31;num++) {
 			if(num%2==0) {
 				even+=num;
@@ -27,7 +27,7 @@ public class Ex8 {
 				odd+=num;
 			}
 		}
-		System.out.println("ì§ìˆ˜í•©: "+even+" í™€ìˆ˜í•©: "+odd);
+		System.out.println("Â¦¼öÇÕ: "+even+" È¦¼öÇÕ: "+odd);
 		*/
 		int num=1,total=0,n1,n2;
 		for(;num<51;num++) {
@@ -40,7 +40,7 @@ public class Ex8 {
 				total+=num;
 			}
 		}
-		System.out.println(" 3 6 9 ìˆ«ìì˜ í•©:"+total);
+		System.out.println(" 3 6 9 ¼ıÀÚÀÇ ÇÕ:"+total);
 		
 		
 		

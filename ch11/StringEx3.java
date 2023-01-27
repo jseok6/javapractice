@@ -1,75 +1,56 @@
 package ch11;
 
 public class StringEx3 {
-
-	public static void main(String[] args) {
-		String str="ì „ì§€í˜„ì´ê°€ ë°±í™”ì ì—ì„œ íŒ¬ì‚¬ì¸íšŒë¥¼ ì—°ë‹¤."
-				 + "ì „ì§€í˜„ì€ 5ì¼ ì˜¤í›„ 3ì‹œ ì„œìš¸ ì†Œê³µë™ ë¡¯ë° ë°±í™”ì "
-				 + " 8ì¸µ ì´ë²¤íŠ¸í™€ì—ì„œ... êµ¬ë‘ ë¸Œëœë“œ ì¡°ì´ì œí™”ì˜" 
-				 + " í™ë³´ë¥¼ ìœ„í•œ íŒ¬ì‚¬ì¸íšŒì— ì°¸ì„í•œë‹¤.";
-		//1ë²ˆ ìˆœë°©í–¥ìœ¼ë¡œ ê³µë°±ë¬¸ìì˜ indexë²ˆí˜¸ ì¶œë ¥ 5,11,....87 hint:indexofì‚¬ìš©
-		
-		for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == ' ') {
-                System.out.print(i+" ");
-            }
-		}
-		System.out.println("");
-		/* 
-		int idx=-1;
-		do {
-			idx=str.indexOf(' ',idx+1);
-			if(idx>=0) {
-				System.out.print(idx+",");
-			}
-			
-		}while(idx>=0);
-		*/
-		//2ë²ˆ ì—­ë°©í–¥ìœ¼ë¡œ ê³µë°±ë¬¸ìì˜ indexë²ˆí˜¸ ì¶œë ¥
 	
-		for (int i = str.length()-1; i>=0; i--) {
-            if (str.charAt(i) == ' ') {
-                System.out.print(i+" ");
-            }
-		}
-		
-		/*
-		int idx=str.length();
+	public static void main(String[] args) {
+		String str = "ÀüÁöÇöÀÌ°¡ ¹éÈ­Á¡¿¡¼­ ÆÒ»çÀÎÈ¸¸¦ ¿¬´Ù."
+				 + "ÀüÁöÇöÀº 5ÀÏ ¿ÀÈÄ 3½Ã ¼­¿ï ¼Ò°øµ¿ ·Ôµ¥ ¹éÈ­Á¡"
+				 + " 8Ãş ÀÌº¥Æ®È¦¿¡¼­... ±¸µÎ ºê·£µå Á¶ÀÌÁ¦È­ÀÇ" 
+				 + " È«º¸¸¦ À§ÇÑ ÆÒ»çÀÎÈ¸¿¡ Âü¼®ÇÑ´Ù.";
+		int len = str.length();
+		/*1¹ø.¼ø¹æÇâÀ¸·Î °ø¹é¹®ÀÚÀÇ index¹øÈ£¸¦ Ãâ·ÂÇÏ½Ã¿À.
+		5, 11,......87, : hint : indexOfÀ» »ç¿ëÇÑ´Ù.*/
+		int idx = -1;
 		do {
-			idx=str.lastIndexOf(' ',idx-1);
-			if(idx>=0) {
-				System.out.print(idx+",");
-			}
-		}while(idx>=0);
-		*/
+			idx = str.indexOf(' ', idx+1);
+			if(idx>=0) System.out.print(idx + ", ");
+		} while (idx>=0);
+		System.out.println();
 		
-		//3ë²ˆ ë¹ˆì¹¸ì„'_'ìœ¼ë¡œ ì¶œë ¥í•˜ê¸° charAt
-		String str1=str.replace(' ','_');
-		System.out.println("\n"+str1);
-		/*
-		for(int i=0; i<str.length(); i++)
-		{
-			char c=str.charAt(i);
-			if(c!=' ') {
-				System.out.print(c);
-			}
-			else {
-				System.out.print('_');
-			}
+		for (int i = 0; i < len; i++) {
+			if(str.charAt(i)==' ')
+				System.out.print(i + ", ");
 		}
-		*/
+		System.out.println();
+		/*2¹ø.¿ª¹æÇâÀ¸·Î °ø¹é¹®ÀÚÀÇ index¹øÈ£¸¦ Ãâ·ÂÇÏ½Ã¿À.
+		87, 81, 78,....5,  : hint : lastIndexOfÀ» »ç¿ëÇÑ´Ù.*/
+		idx = len;//str.length()
+		do {
+			idx = str.lastIndexOf(' ', idx -1);
+			if(idx>=0) System.out.print(idx + ", ");
+		} while (idx>=0);
+		System.out.println();
+		for (int i = len-1; i >=0 ; i--) {
+			if(str.charAt(i)==' ')
+				System.out.print(i + ", ");
+		}
+		System.out.println();
+		/*3¹ø.ºóÄ­À» '_' Ãâ·ÂÇÏ½Ã¿À. hint:charAt*/
+		for (int i = 0; i < len; i++) {
+			char c = str.charAt(i);
+			if(c!=' ') System.out.print(c);
+			else System.out.print('_');
+		}
+		System.out.println();
+		System.out.println(str.replace(' ', '_'));
+		/*4¹ø Ã¹´Ü¾î Ãâ·ÂÇÏ±â : substring, indexOf*/
+		int a = str.indexOf(' ');
+		String str2 = str.substring(0, a);
+		System.out.println("str2 : " + str2);
 		
-		
-		//4ë²ˆ ì²«ë‹¨ì–´ ì¶œë ¥í•˜ê¸°:substring,indexof
-		
-		
-		
-		int idx1=str.indexOf(' ');
-		System.out.println(str.substring(0,idx1));
-		//5ë²ˆ ë§ˆì§€ë§‰ ë‹¨ì–´ ì¶œë ¥í•˜ê¸°:substring,lastIndexOf
-		
-		
-		int idx2=str.lastIndexOf(' ');
-		System.out.println(str.substring(idx2+1,str.length()));
+		/*5¹ø ¸¶Áö¸·´Ü¾î Ãâ·ÂÇÏ±â : substring, lastIndexOf*/
+		int b = str.lastIndexOf(' ') + 1;
+		String str3 = str.substring(b, len);
+		System.out.println("str3 : " + str3);
 	}
 }

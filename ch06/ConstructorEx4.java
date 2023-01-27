@@ -1,21 +1,21 @@
 package ch06;
 
-class SuperClass4{//ë¶€ëª¨   SuperClass3ì˜ ë¶€ëª¨ëŠ” Object
-	//superë¼ëŠ” í‚¤ì›Œë“œ ë¶€ëª¨ë¥¼ ì§€ì¹­í•˜ëŠ”ê²ƒ.
-	//SuperëŠ” ë°˜ë“œì‹œ ì²«ë²ˆì§¸ ë¼ì¸ì— ì™€ì•¼ë¨
+class SuperClass4{//ºÎ¸ğ   SuperClass3ÀÇ ºÎ¸ğ´Â Object
+	//super¶ó´Â Å°¿öµå ºÎ¸ğ¸¦ ÁöÄªÇÏ´Â°Í.
+	//Super´Â ¹İµå½Ã Ã¹¹øÂ° ¶óÀÎ¿¡ ¿Í¾ßµÊ
 	
 	
 	public SuperClass4(int i) {
 		super();
-		System.out.println("Super ìƒì„±ì");
+		System.out.println("Super »ı¼ºÀÚ");
 	}
 	
 	
 }
-class SubClass4 extends SuperClass4{//ìì‹
+class SubClass4 extends SuperClass4{//ÀÚ½Ä
 	public SubClass4() {
-		super(22);//ìƒëµì´ ë¶ˆê°€ëŠ¥í•¨
-		System.out.println("Sub ìƒì„±ì");
+		super(22);//»ı·«ÀÌ ºÒ°¡´ÉÇÔ
+		System.out.println("Sub »ı¼ºÀÚ");
 		
 	}
 }
@@ -28,5 +28,5 @@ public class ConstructorEx4 {
  
 }
  
-//ì „ì²´ì£¼ì„ ì»¨íŠ¸ë¡¤+shift+?
-//ì£¼ì„ ì»¨íŠ¸ë¡¤+/ 
+//ÀüÃ¼ÁÖ¼® ÄÁÆ®·Ñ+shift+?
+//ÁÖ¼® ÄÁÆ®·Ñ+/ 

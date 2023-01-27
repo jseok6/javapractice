@@ -6,19 +6,19 @@ public class Ex1 {
 
 	public static void main(String[] args) {
 		/*
-		 * ì œì–´ë¬¸:ì¡°ê±´(ì„ íƒ)ë¬¸,ë°˜ë³µë¬¸
-		 * -ì¡°ê±´ë¬¸:if-else,switch
-		 * -ë°˜ë³µë¬¸:for,while
+		 * Á¦¾î¹®:Á¶°Ç(¼±ÅÃ)¹®,¹İº¹¹®
+		 * -Á¶°Ç¹®:if-else,switch
+		 * -¹İº¹¹®:for,while
 		 */
 		Scanner sc =new Scanner(System.in);
-		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
+		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
 		int a=sc.nextInt();
-		System.out.println("ì…ë ¥í•œ ìˆ«ì:"+a);
+		System.out.println("ÀÔ·ÂÇÑ ¼ıÀÚ:"+a);
 		if (a%3==0) {
-			System.out.println("3ì˜ë°°ìˆ˜ì…ë‹ˆë‹¤.");
+			System.out.println("3ÀÇ¹è¼öÀÔ´Ï´Ù.");
 		}
 		else {
-			System.out.println("3ì˜ë°°ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
+			System.out.println("3ÀÇ¹è¼ö°¡ ¾Æ´Õ´Ï´Ù.");
 		}
 	}
 

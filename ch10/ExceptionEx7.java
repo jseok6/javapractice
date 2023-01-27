@@ -4,7 +4,7 @@ public class ExceptionEx7 {
 	int a=100;
 	public void m(int b) throws Exception{
 		if(b==0)
-			throw new Exception("aëŠ” 0ìœ¼ë¡œ ë‚˜ëˆ„ë©´ ì•ˆë˜ìš”.");
+			throw new Exception("a´Â 0À¸·Î ³ª´©¸é ¾ÈµÇ¿ä.");
 		else {
 			System.out.println(a+"/"+b+"="+"(a/b)");
 		}

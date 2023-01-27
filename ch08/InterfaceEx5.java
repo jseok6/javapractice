@@ -1,14 +1,14 @@
 package ch08;
 
-abstract class ì²™ì¶”ë™ë¬¼{
+abstract class Ã´Ãßµ¿¹°{
 	
 }
 
-interface í¬ìœ ë™ë¬¼{
+interface Æ÷À¯µ¿¹°{
 	
 }
 
-class ì‚¬ì extends ì²™ì¶”ë™ë¬¼ implements í¬ìœ ë™ë¬¼{
+class »çÀÚ extends Ã´Ãßµ¿¹° implements Æ÷À¯µ¿¹°{
 	
 }
 public class InterfaceEx5 {

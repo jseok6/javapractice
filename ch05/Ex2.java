@@ -3,17 +3,17 @@ package ch05;
 public class Ex2 {
 
 	public static void main(String[] args) {
-		//ë‹¤ì°¨ì› ë°°ì—´:nì°¨ ê°œìˆ˜ë§Œí¼ forë¬¸ì´ ì¡´ì¬í•œë‹¤.
+		//´ÙÂ÷¿ø ¹è¿­:nÂ÷ °³¼ö¸¸Å­ for¹®ÀÌ Á¸ÀçÇÑ´Ù.
 		int arr[][]=new int[2][3];
-		for(int i=0; i<arr.length; i++)//arr.lengthëŠ” ì•ìˆ«ì ëœ»í•¨
+		for(int i=0; i<arr.length; i++)//arr.length´Â ¾Õ¼ıÀÚ ¶æÇÔ
 		{
-			for(int j=0; j<arr[i].length; j++)//arr[i].lengthëŠ” ë’·ìˆ«ìëœ»í•¨
+			for(int j=0; j<arr[i].length; j++)//arr[i].length´Â µŞ¼ıÀÚ¶æÇÔ
 			{
 				arr[i][j]=i+j;
 				System.out.println("arr["+i+"]["+j+"]="+arr[i][j]);
 			}
 		}
-	/*	//ë¬¸ì œ1. arr2ëª¨ë“  ê°’ í•©êµ¬í•˜ê¸°
+	/*	//¹®Á¦1. arr2¸ğµç °ª ÇÕ±¸ÇÏ±â
 		int arr2[][] = {
 				{1,2},{3,4,5},{6},{1,2,3,4},{2,3,4}
 		};
@@ -28,7 +28,7 @@ public class Ex2 {
 		}
 		System.out.println(sum);*/
 		
-		//ë¬¸ì œ2.arr3ì˜ í‰ê·  êµ¬í•˜ê¸°
+		//¹®Á¦2.arr3ÀÇ Æò±Õ ±¸ÇÏ±â
 		double total=0;
 		int count=0;
 		double arr3[][] = {

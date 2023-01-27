@@ -3,17 +3,17 @@ package ch02;
 public class Ex1 {
 
 	public static void main(String[] args) {
-		//ë³€ìˆ˜
+		//º¯¼ö
 		int a=10;
-		//ë³€ìˆ˜ëŠ” ë°˜ë“œì‹œ Data Type ìˆë‹¤
-		String s="ìë°”";
-		//ctr+alt+ë°©í–¥í‚¤=í˜„ì¬ì»¤ì„œë³µì‚¬
+		//º¯¼ö´Â ¹İµå½Ã Data Type ÀÖ´Ù
+		String s="ÀÚ¹Ù";
+		//ctr+alt+¹æÇâÅ°=ÇöÀçÄ¿¼­º¹»ç
 		System.out.println(a);
 		System.out.println(s);
 		
-		int/*ì •ìˆ˜*/ b=20;
+		int/*Á¤¼ö*/ b=20;
 		int c=a+b;
-		double/*ì‹¤ìˆ˜*/ d=20;
+		double/*½Ç¼ö*/ d=20;
 		System.out.println(Integer.MAX_VALUE);
 		System.out.println(Short.MAX_VALUE);
 		System.out.println(Double.MAX_VALUE);

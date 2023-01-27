@@ -3,7 +3,7 @@ package ch06;
 import java.util.*;
 
 class Static3{
-	/*ìŠ¤íƒœí‹± í•„ë“œëŠ” ë™ì¼í•œ í´ëž˜ìŠ¤ì˜ ëª¨ë“  ê°ì²´ê°€ ê³µìœ ì˜ ëª©ì ìœ¼ë¡œ í•˜ë‚˜ë§Œ ë©”ëª¨ë¦¬ì— ì €ìž¥ëœë‹¤*/
+	/*½ºÅÂÆ½ ÇÊµå´Â µ¿ÀÏÇÑ Å¬·¡½ºÀÇ ¸ðµç °´Ã¼°¡ °øÀ¯ÀÇ ¸ñÀûÀ¸·Î ÇÏ³ª¸¸ ¸Þ¸ð¸®¿¡ ÀúÀåµÈ´Ù*/
 	static int a;
 	int b;
 }

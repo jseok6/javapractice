@@ -16,8 +16,8 @@ public class MFrame extends Frame{
 //		});
 //		setVisible(true);
 //		
-//		//ë°°ê²½ìƒ‰:setBackground(getForeground());
-//		//ì „ê²½ìƒ‰:setForeground(getBackground());
+//		//¹è°æ»ö:setBackground(getForeground());
+//		//Àü°æ»ö:setForeground(getBackground());
 //		
 	
 	public MFrame() {

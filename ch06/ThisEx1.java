@@ -20,4 +20,4 @@ public class ThisEx1 {
 	}
 
 }
-//new ê°œìˆ˜ë§Œí¼ ê°ì²´ë§Œë“¤ì–´ì§
+//new °³¼ö¸¸Å­ °´Ã¼¸¸µé¾îÁü

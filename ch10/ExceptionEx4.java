@@ -13,7 +13,7 @@ public class ExceptionEx4 {
 			while((a=fr.read())!=-1) {
 				System.out.print((char)a);
 			}
-			//FileNotFoundException ìƒìœ„ í´ë˜ìŠ¤ê°€ IOException
+			//FileNotFoundException »óÀ§ Å¬·¡½º°¡ IOException
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

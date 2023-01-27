@@ -5,31 +5,34 @@ import java.util.Vector;
 public class WrapperEx1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//ìë°”ì˜ ê¸°ë³¸í˜• Data Type(8ê°€ì§€->ê°ì²´í™”)
-		int a=10;
+		//ÀÚ¹ÙÀÇ ±âº»Çü Data Type (8°¡Áö -> °´Ã¼È­)
+		int a = 10;
 		//Auto Boxing
-		Integer it1=a;//ì›ë˜ ë³‘í•©ì•ˆë¨
-		
-		//Auto unBoxing
-		int b=it1;
-		
-		Vector v=new Vector<>();
+		Integer it1 = a;//¿ø·¡ º¯ÇÔ ¾ÈµÊ.
+		//Auto unBoxing;
+		int b = it1;
+		Vector v = new Vector();
 		v.add(a);//Auto Boxing
 		v.add(it1);
-		int c=(Integer)v.get(0);//auto unBoxing
-		Integer it2=new Integer(10);
-		Integer it3=new Integer("20");
-		Integer it4=Integer.valueOf(10);
-		Integer it5=Integer.valueOf("20");
-		int a1=it4.intValue();
-		a1=it4;
-		int b1=it5.intValue();
-		int c1=a1+b1;
+		int c = (Integer)v.get(0);//Auto unBoxing;
+		
+		Integer it2 = new Integer(10);
+		Integer it3 = new Integer("20");
+		Integer it4 = Integer.valueOf(10);
+		Integer it5 = Integer.valueOf("20");
+		int a1 = it4.intValue();
+		a1 = it4;
+		int b1 = it5.intValue();
+		int c1 = a1 + b1;
 		System.out.println(c1);
-		int a2=Integer.parseInt("30");
+		int a2 = Integer.parseInt("30");
 		System.out.println(Integer.MIN_VALUE);
 		System.out.println(Integer.toBinaryString(a2));
 	}
-
 }
+
+
+
+
+
+

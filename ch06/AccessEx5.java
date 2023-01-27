@@ -1,6 +1,6 @@
 package ch06;
 
-//java.awt.Frameì— paramStringì˜ ê²°ê³¼ê°’ì„ ì¶œë ¥í•˜ì‹œì˜¤.
+//java.awt.Frame¿¡ paramStringÀÇ °á°ú°ªÀ» Ãâ·ÂÇÏ½Ã¿À.
 
 import java.awt.Frame;
 

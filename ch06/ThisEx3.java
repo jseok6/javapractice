@@ -25,8 +25,8 @@ implements ActionListener{
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		//System.out.println("ë³´ì´ë‚˜ìš”?");
-		MDialog md = new MDialog(this, "ë³´ì´ë‚˜ìš”");
+		//System.out.println("º¸ÀÌ³ª¿ä?");
+		MDialog md = new MDialog(this, "º¸ÀÌ³ª¿ä");
 		
 	}
 	
@@ -60,7 +60,7 @@ implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			f.btn.setBackground(rColor());
-			dispose();//ìì‹ ì˜ ì°½ì´ ì‚¬ë¼ì§
+			dispose();//ÀÚ½ÅÀÇ Ã¢ÀÌ »ç¶óÁü
 		}
 	}
 	

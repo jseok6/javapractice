@@ -4,7 +4,7 @@ public class Ex8 {
 
 	public static void main(String[] args) 
 	throws Exception{
-		System.out.println("í‚¤ë³´ë“œë¥¼ ìž…ë ¥í•˜ê³  Enterí•˜ì„¸ìš”.");
+		System.out.println("Å°º¸µå¸¦ ÀÔ·ÂÇÏ°í EnterÇÏ¼¼¿ä.");
 		while(true) {
 		int keyCode=System.in.read();
 		System.out.println("keyCode:"+keyCode);
@@ -12,7 +12,7 @@ public class Ex8 {
 			break;
 		}
 		}//while
-		System.out.println("ì¢…ë£Œ~");
+		System.out.println("Á¾·á~");
 	}
 }
 

@@ -4,15 +4,16 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DateEx1 {
-
 	public static void main(String[] args) {
-		Date d=new Date();
+		Date d = new Date();
 		System.out.println(d);
-		//1970ë…„ 1ì›”1ì¼
+		//1970³â 1¿ù1ÀÏ ÃÊ 1/1000
 		System.out.println(System.currentTimeMillis());
-		SimpleDateFormat sdf= new SimpleDateFormat("yyyë…„ MMì›” ddì¼ hhì‹œ mmë¶„ ssì´ˆ");
-		String str=sdf.format(d);
+		SimpleDateFormat sdf = 
+	new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ hh½Ã mmºĞ ssÃÊ");
+		String str = sdf.format(d);
 		System.out.println(str);
+		
 	}
-
 }
+

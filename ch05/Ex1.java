@@ -3,11 +3,11 @@ package ch05;
 public class Ex1 {
 
 	public static void main(String[] args) {
-		//1.ë°°ì—´ì„ ì–¸
+		//1.¹è¿­¼±¾ğ
 		int arr[];
-		//2.ë°°ì—´ì˜ í¬ê¸°ì§€ì •(ë°°ì—´ì˜ í¬ê¸°ëŠ” ë¶ˆë³€)
+		//2.¹è¿­ÀÇ Å©±âÁöÁ¤(¹è¿­ÀÇ Å©±â´Â ºÒº¯)
 		arr=new int[5];
-		//3.ë°°ì—´ê°’ í• ë‹¹
+		//3.¹è¿­°ª ÇÒ´ç
 		arr[0]=1;
 		arr[1]=2;
 		arr[2]=3;
@@ -25,7 +25,7 @@ public class Ex1 {
 			arr1[i]=i*10;
 			System.out.println(arr1[i]);
 		}
-		//ë°°ì—´ì„ ì–¸ê³¼ ë™ì‹œì— ë°”ë¡œ í• ë‹¹í•˜ê¸°
+		//¹è¿­¼±¾ğ°ú µ¿½Ã¿¡ ¹Ù·Î ÇÒ´çÇÏ±â
 		int arr2[]= {1,2,3,4,5,6};
 		String str[]= {"Java","JSP","Android","Spring"};
 		

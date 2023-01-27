@@ -1,5 +1,5 @@
 package ch09;
-//ì¢…ë£Œë²„íŠ¼
+//Á¾·á¹öÆ°
 import java.awt.BorderLayout;
 import java.awt.Button;
 import java.awt.event.ActionEvent;
@@ -18,7 +18,7 @@ public class MyFrame extends MFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.exit(0);//ì¢…ë£Œ
+				System.exit(0);//Á¾·á
 			}
 		});
 		
@@ -29,3 +29,4 @@ public class MyFrame extends MFrame{
 	}
 
 }
+

@@ -6,22 +6,22 @@ public class SwitchEx1 {
 
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
-		System.out.println("Monthë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
+		System.out.println("Month¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
 		int m=sc.nextInt();
 		if(m==12||m==1||m==2) {
-			System.out.println("ê²¨ìš¸ì…ë‹ˆë‹¤.");
+			System.out.println("°Ü¿ïÀÔ´Ï´Ù.");
 		}
 		else if(m==3||m==4||m==5) {
-			System.out.println("ë´„ì…ë‹ˆë‹¤.");
+			System.out.println("º½ÀÔ´Ï´Ù.");
 		}
 		else if(m==6||m==7||m==8) {
-			System.out.println("ì—¬ë¦„ì…ë‹ˆë‹¤.");
+			System.out.println("¿©¸§ÀÔ´Ï´Ù.");
 		}
 		else if(m==9||m==10||m==11) {
-			System.out.println("ê°€ì„ì…ë‹ˆë‹¤.");
+			System.out.println("°¡À»ÀÔ´Ï´Ù.");
 		}
 		else {
-			System.out.println("í•´ë‹¹ë˜ëŠ” ê³„ì ˆì´ ì—†ìŠµë‹ˆë‹¤.");
+			System.out.println("ÇØ´çµÇ´Â °èÀıÀÌ ¾ø½À´Ï´Ù.");
 		}
 		
 		////////////////////
@@ -29,25 +29,25 @@ public class SwitchEx1 {
 		case 12:
 		case 1:
 		case 2:
-			System.out.println("ê²¨ìš¸ì…ë‹ˆë‹¤.");
+			System.out.println("°Ü¿ïÀÔ´Ï´Ù.");
 			break;
 		case 3:
 		case 4:
 		case 5:
-			System.out.println("ë´„ì…ë‹ˆë‹¤.");
+			System.out.println("º½ÀÔ´Ï´Ù.");
 			break;
 		case 6:
 		case 7:
 		case 8:
-			System.out.println("ì—¬ë¦„ì…ë‹ˆë‹¤.");
+			System.out.println("¿©¸§ÀÔ´Ï´Ù.");
 			break;
 		case 9:
 		case 10:
 		case 11:
-			System.out.println("ê°€ì„ì…ë‹ˆë‹¤.");
+			System.out.println("°¡À»ÀÔ´Ï´Ù.");
 			break;
 		default:
-			System.out.println("í•´ë‹¹ë˜ëŠ” ê³„ì ˆì´ ì—†ìŠµë‹ˆë‹¤.");
+			System.out.println("ÇØ´çµÇ´Â °èÀıÀÌ ¾ø½À´Ï´Ù.");
 		}
 	}
 

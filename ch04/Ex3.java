@@ -6,11 +6,11 @@ public class Ex3 {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.");//1ì—ì„œ~20
+		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");//1¿¡¼­~20
 		int a=sc.nextInt();
 		int b=a%10;
 		if (b%3==0) {
-			System.out.println("ì§");
+			System.out.println("Â¦");
 		}
 		System.out.println(a);
 	}

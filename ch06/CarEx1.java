@@ -2,14 +2,14 @@ package ch06;
 
 
 
-//í´ëž˜ìŠ¤ ì„ ì–¸ í´ëž˜ìŠ¤ì˜ ì›ëž˜ í’€ë„¤ìž„:ch06.Car1
-//í´ëž˜ìŠ¤:ê°ì²´ë¥¼ ë§Œë“œëŠ” í‹€(ex-ë¶•ì–´ë¹µ í‹€)
-class Car1/*í´ëž˜ìŠ¤ëª…*/{
-	//í•„ë“œ:ê°ì²´ì˜ ì†ì„±<ã…¡ ë¬´ì¡°ê±´ ()ëŠ” ì—†ë‹¤.
+//Å¬·¡½º ¼±¾ð Å¬·¡½ºÀÇ ¿ø·¡ Ç®³×ÀÓ:ch06.Car1
+//Å¬·¡½º:°´Ã¼¸¦ ¸¸µå´Â Æ²(ex-ºØ¾î»§ Æ²)
+class Car1/*Å¬·¡½º¸í*/{
+	//ÇÊµå:°´Ã¼ÀÇ ¼Ó¼º<¤Ñ ¹«Á¶°Ç ()´Â ¾ø´Ù.
 	String carName;
 	int velocity;
 	String carColor;
-	//ë©”ì†Œë“œ:ê°ì²´ì˜ ê¸°ëŠ¥<ã…¡ ë°˜ë“œì‹œ ()ê°€ ìžˆë‹¤.
+	//¸Þ¼Òµå:°´Ã¼ÀÇ ±â´É<¤Ñ ¹Ýµå½Ã ()°¡ ÀÖ´Ù.
 	void speedUp() {
 		velocity++;
 	}
@@ -22,21 +22,21 @@ class Car1/*í´ëž˜ìŠ¤ëª…*/{
 		velocity=0;
 	}
 }
-//.javaë¡œ ì„ ì–¸ëœ í´ëž˜ìŠ¤ë§Œ public ì‚¬ìš©ê°€ëŠ¥
+//.java·Î ¼±¾ðµÈ Å¬·¡½º¸¸ public »ç¿ë°¡´É
 public class CarEx1 {
 
 	public static void main(String[] args) {
 		
 		int arr[]=new int[3];
 		System.out.println(arr.length);
-		String str="ì˜¤ëŠ˜ì˜ ë©”ë‰´ëŠ” ìˆ˜êµ¬ë ˆ";
+		String str="¿À´ÃÀÇ ¸Þ´º´Â ¼ö±¸·¹";
 		System.out.println(str.length());
 		
 		
-		//ê°ì²´ ìƒì„±
+		//°´Ã¼ »ý¼º
 		Car1 c1=new Car1();
-		c1.carName="ì†Œë‚˜íƒ€";
-		c1.carColor="ì€ìƒ‰";
+		c1.carName="¼Ò³ªÅ¸";
+		c1.carColor="Àº»ö";
 		c1.speedUp();
 		System.out.println(c1.carName);
 		System.out.println(c1.carColor);

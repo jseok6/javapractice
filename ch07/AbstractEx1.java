@@ -2,16 +2,16 @@ package ch07;
 
 import java.awt.Component;
 
-//ì¶”ìƒí´ë˜ìŠ¤
+//Ãß»óÅ¬·¡½º
 abstract class Abstract1 {
-	//ì¶”ìƒë©”ì†Œë“œ
+	//Ãß»ó¸Ş¼Òµå
 	abstract void prn();
 	
 }
 
 class Normal1 extends Abstract1{
 	@Override
-	void prn() {//<ã…¡ ì´ê±° ê¼­í•„ìš” ì•ˆí•˜ë©´ ë¬¸ë²•ì—ëŸ¬ë‚¨
+	void prn() {//<¤Ñ ÀÌ°Å ²ÀÇÊ¿ä ¾ÈÇÏ¸é ¹®¹ı¿¡·¯³²
 	}
 }
 
@@ -24,7 +24,7 @@ public class AbstractEx1 {
 	public static void main(String[] args) {
 		
 		Abstract1 a;
-		//a=new Abstract1(); ì¶”ìƒí´ë˜ìŠ¤ ê°ì²´ìƒì„±ëª»í•¨
+		//a=new Abstract1(); Ãß»óÅ¬·¡½º °´Ã¼»ı¼º¸øÇÔ
 		a= new Normal1();
 		
 	}

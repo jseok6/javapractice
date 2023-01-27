@@ -8,25 +8,25 @@ public class ExceptionEx3 {
 		try {
 			int a,b;
 			s=new Scanner(System.in);
-			System.out.print("ì²«ë²ˆì§¸ ìˆ«ì:");
+			System.out.print("Ã¹¹øÂ° ¼ıÀÚ:");
 			a=s.nextInt();
-			System.out.print("ë‘ë²ˆì§¸ ìˆ«ì:");
+			System.out.print("µÎ¹øÂ° ¼ıÀÚ:");
 			b=s.nextInt();
 			System.out.println(a+"/"+b+"="+(a/b));
 		}
 		
 		catch (ArithmeticException e) {
-			System.out.println("0ìœ¼ë¡œ ì…ë ¥í•˜ë©´ ì•ˆë˜ìš”");
+			System.out.println("0À¸·Î ÀÔ·ÂÇÏ¸é ¾ÈµÇ¿ä");
 		}
 		catch (InputMismatchException e) {
-			System.out.println("ìˆ«ìë§Œ ì…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤.");
+			System.out.println("¼ıÀÚ¸¸ ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù.");
 		}
 		catch (Exception e) {
-			//ì´ê±°ëŠ” ë§¨ë§ˆì§€ë§‰ì— ë„£ì–´ì•¼ë¨ ë‚˜ë¨¸ì§€ ë‹¤ì¡ì•„ì„œ
-			//ë‹¤ì¤‘ ìºì¹˜í‹¸ë•ŒëŠ” í•˜ìœ„ Exceptionì´ ìœ„ì— ì™€ì•¼í•œë‹¤.
+			//ÀÌ°Å´Â ¸Ç¸¶Áö¸·¿¡ ³Ö¾î¾ßµÊ ³ª¸ÓÁö ´ÙÀâ¾Æ¼­
+			//´ÙÁß Ä³Ä¡Æ¿¶§´Â ÇÏÀ§ ExceptionÀÌ À§¿¡ ¿Í¾ßÇÑ´Ù.
 		}
 		finally {
-			s.close();//ì‚¬ìš©í›„ì— ë°˜ë“œì‹œ ë‹«ì•„ì•¼í•œë‹¤.
+			s.close();//»ç¿ëÈÄ¿¡ ¹İµå½Ã ´İ¾Æ¾ßÇÑ´Ù.
 		}
 
 	}

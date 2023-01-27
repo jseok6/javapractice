@@ -3,12 +3,12 @@ package ch06;
 import java.awt.Dialog;
 
 class Constructor2{
-	//JVMì€ ìƒì„±ìê°€ í•˜ë‚˜ë¼ë„ ì„ ì–¸ë˜ì–´ ìˆìœ¼ë©´ ë””í´íŠ¸ ìƒì„±ì ì œê³µ ì•ˆí•¨.
+	//JVMÀº »ı¼ºÀÚ°¡ ÇÏ³ª¶óµµ ¼±¾ğµÇ¾î ÀÖÀ¸¸é µğÆúÆ® »ı¼ºÀÚ Á¦°ø ¾ÈÇÔ.
 	public Constructor2(int i)
 	{
 		
 	}
-	//ì˜¤ë¥˜ìˆ˜ì •í•˜ë ¤ë©´ ë””í´íŠ¸ìƒì„±ì ì •ì˜
+	//¿À·ù¼öÁ¤ÇÏ·Á¸é µğÆúÆ®»ı¼ºÀÚ Á¤ÀÇ
 	public Constructor2()
 	{
 		
@@ -17,10 +17,10 @@ class Constructor2{
 public class ConstructorEx2 {
 
 	public static void main(String[] args) {
-		Constructor2 c1=new Constructor2();//ì˜¤ë¥˜
+		Constructor2 c1=new Constructor2();//¿À·ù
 		Constructor2 c2=new Constructor2(22);
-		//ì˜¤ë¥˜ì´ìœ :Dialog í´ë˜ìŠ¤ëŠ” ë””í´íŠ¸ ìƒì„±ìê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŒ
-		//Dialog d=new Dialog(); <ã…¡ì˜¤ë¥˜
+		//¿À·ùÀÌÀ¯:Dialog Å¬·¡½º´Â µğÆúÆ® »ı¼ºÀÚ°¡ Á¸ÀçÇÏÁö ¾ÊÀ½
+		//Dialog d=new Dialog(); <¤Ñ¿À·ù
 	}
 
 }

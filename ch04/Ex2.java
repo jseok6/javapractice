@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class Ex2 {
 
 	public static void main(String[] args) {
-		//ìž…ë ¥í•œ ìˆ«ìžê°€ ì–‘ìˆ˜ì¸ì§€ ìŒìˆ˜ì¸ì§€ 0ì¸ì§€ íŒë‹¨í•˜ì„¸ìš”.
+		//ÀÔ·ÂÇÑ ¼ýÀÚ°¡ ¾ç¼öÀÎÁö À½¼öÀÎÁö 0ÀÎÁö ÆÇ´ÜÇÏ¼¼¿ä.
 		Scanner sc=new Scanner(System.in);
-		System.out.println("ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”.");
+		System.out.println("¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
 		int a=sc.nextInt();
 		if (a>0) {
-			System.out.println("ì–‘ìˆ˜ìž…ë‹ˆë‹¤.");
+			System.out.println("¾ç¼öÀÔ´Ï´Ù.");
 		}
 		else if(a<0) {
-			System.out.println("ìŒìˆ˜ìž…ë‹ˆë‹¤.");
+			System.out.println("À½¼öÀÔ´Ï´Ù.");
 		}
 		else if(a==0) {
-			System.out.println("0ìž…ë‹ˆë‹¤.");
+			System.out.println("0ÀÔ´Ï´Ù.");
 		}
 	}
 

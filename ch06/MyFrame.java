@@ -6,11 +6,11 @@ import java.awt.Graphics;
 import java.util.Random;
 
 public class MyFrame extends MFrame {
-	//500x500,ë°”íƒ•ìƒ‰:white,resize:false
+	//500x500,¹ÙÅÁ»ö:white,resize:false
 	Random r;
 	public MyFrame() {
 		super(500,500,Color.WHITE,false);
-		r=new Random();//ëœë¤ê°ì²´
+		r=new Random();//·£´ı°´Ã¼
 	}
 	
 	
@@ -18,14 +18,14 @@ public class MyFrame extends MFrame {
 	{
 		
 		for (int i=0; i<10000; i++) {
-		g.setColor(rColor());//ë¶“ì— ë¬¼ê°ì„¸íŒ…
+		g.setColor(rColor());//º×¿¡ ¹°°¨¼¼ÆÃ
 		int x=r.nextInt(500);
 		int y=r.nextInt(500);
 		int w=r.nextInt(10)+5;
 		int h=r.nextInt(10)+5;
 	
 		
-		//g.drawString("ë°˜ê°‘ìŠµë‹ˆë‹¤.", 50,50);
+		//g.drawString("¹İ°©½À´Ï´Ù.", 50,50);
 		//g.drawRect(x, y, w, h);
 		g.fillRect(x, y, w, h);
 		try {

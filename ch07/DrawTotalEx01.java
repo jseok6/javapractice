@@ -23,7 +23,7 @@ implements ActionListener, ItemListener {
     Panel p1;
     TextField trgb[];
     Checkbox fcb;
-    Checkbox rcb;//ëœë¤ìƒ‰ìƒ
+    Checkbox rcb;//·£´ı»ö»ó
     Random r = new Random();
     Checkbox scb1, scb2, scb3, scb4, scb5;
     CheckboxGroup scbg;
@@ -53,7 +53,7 @@ implements ActionListener, ItemListener {
         trgb[1] = new TextField("100", 3);
         trgb[2] = new TextField("200", 3);
         ////////////////////////////////////////////////////////////////////////////
-        rcb = new Checkbox("ëœë¤");
+        rcb = new Checkbox("·£´ı");
         rcb.addItemListener(this);
         p2.add(rcb);
         /////////////////////////////////////////////////////////////////////////////
@@ -71,12 +71,12 @@ implements ActionListener, ItemListener {
         p3.setBackground(Color.LIGHT_GRAY);
         p3.setLayout(new GridLayout(5, 1));
         scbg = new CheckboxGroup();
-        scb1 = new Checkbox("ë¼ì¸", scbg, true);
-        scb2 = new Checkbox("ì‚¬ê°í˜•", scbg, false);
-        scb3 = new Checkbox("íƒ€ì›", scbg, false);
-        scb4 = new Checkbox("ë¶€ì±„ê¼´", scbg, false);
-        scb5 = new Checkbox("ë‘¥ê·¼ì‚¬ê°í˜•", scbg, false);
-        fcb = new Checkbox("ì±„ìš°ê¸°");
+        scb1 = new Checkbox("¶óÀÎ", scbg, true);
+        scb2 = new Checkbox("»ç°¢Çü", scbg, false);
+        scb3 = new Checkbox("Å¸¿ø", scbg, false);
+        scb4 = new Checkbox("ºÎÃ¤²Ã", scbg, false);
+        scb5 = new Checkbox("µÕ±Ù»ç°¢Çü", scbg, false);
+        fcb = new Checkbox("Ã¤¿ì±â");
         scb1.addItemListener(this);
         scb2.addItemListener(this);
         scb3.addItemListener(this);
@@ -98,16 +98,16 @@ implements ActionListener, ItemListener {
 
     public void itemStateChanged(ItemEvent e) {
     	if(e.getSource()==rcb){
-    		if(rcb.getState()){//trgb ë¹„í™œì„±í™”
+    		if(rcb.getState()){//trgb ºñÈ°¼ºÈ­
     			for (int i = 0; i < trgb.length; i++) {
 					trgb[i].setEnabled(false);
 				}
-    		}else{//trgb í™œì„±í™”
+    		}else{//trgb È°¼ºÈ­
     			for (int i = 0; i < trgb.length; i++) {
 					trgb[i].setEnabled(true);
 				}
     		}
-    		return;//ë§¤ì†Œë“œ ì‹¤í–‰ ì™„ë£Œ
+    		return;//¸Å¼Òµå ½ÇÇà ¿Ï·á
     	}
     	setAWT();
     	p1.validate();
@@ -121,7 +121,7 @@ implements ActionListener, ItemListener {
         public void paint(Graphics g) {
            int rgb[] = new int[3];
            for (int i = 0; i < rgb.length; i++) {
-        	   		if(rcb.getState()){//rcbê°€ ì²´í¬ì´ë©´...
+        	   		if(rcb.getState()){//rcb°¡ Ã¼Å©ÀÌ¸é...
         	   			rgb[i] = r.nextInt(256);
         	   		}else{
         	   			rgb[i] = Integer.parseInt(trgb[i].getText());
@@ -201,7 +201,7 @@ implements ActionListener, ItemListener {
         p1.removeAll();
         Checkbox cb = scbg.getSelectedCheckbox();
         if (cb == scb1) {
-            setTitle("ë¼ì¸ ê·¸ë¦¬ê¸°");
+            setTitle("¶óÀÎ ±×¸®±â");
             tx1_1 = new TextField("0", 3);
             ty1_1 = new TextField("0", 3);
             tx2_1 = new TextField("0", 3);
@@ -218,11 +218,11 @@ implements ActionListener, ItemListener {
             l = new Label("y2");
             p1.add(l);
             p1.add(ty2_1);
-            b = new Button("ê·¸ë¦¬ê¸°");
+            b = new Button("±×¸®±â");
             b.addActionListener(this);
             p1.add(b);
         } else if (cb == scb2) {
-            setTitle("ì‚¬ê°í˜• ê·¸ë¦¬ê¸°");
+            setTitle("»ç°¢Çü ±×¸®±â");
             tx_2 = new TextField("0", 3);
             ty_2 = new TextField("0", 3);
             tw_2 = new TextField("0", 3);
@@ -233,19 +233,19 @@ implements ActionListener, ItemListener {
             l = new Label("y");
             p1.add(l);
             p1.add(ty_2);
-            l = new Label("ë„ˆë¹„");
+            l = new Label("³Êºñ");
             p1.add(l);
             p1.add(tw_2);
-            l = new Label("ë†’ì´");
+            l = new Label("³ôÀÌ");
             p1.add(l);
             p1.add(th_2);
-            fcb = new Checkbox("ì±„ìš°ê¸°");
+            fcb = new Checkbox("Ã¤¿ì±â");
             p1.add(fcb);
-            b = new Button("ê·¸ë¦¬ê¸°");
+            b = new Button("±×¸®±â");
             b.addActionListener(this);
             p1.add(b);
         } else if (cb == scb3) {
-            setTitle("íƒ€ì› ê·¸ë¦¬ê¸°");
+            setTitle("Å¸¿ø ±×¸®±â");
             tx_3 = new TextField("0", 3);
             ty_3 = new TextField("0", 3);
             tw_3 = new TextField("0", 3);
@@ -256,19 +256,19 @@ implements ActionListener, ItemListener {
             l = new Label("y");
             p1.add(l);
             p1.add(ty_3);
-            l = new Label("ë„ˆë¹„");
+            l = new Label("³Êºñ");
             p1.add(l);
             p1.add(tw_3);
-            l = new Label("ë†’ì´");
+            l = new Label("³ôÀÌ");
             p1.add(l);
             p1.add(th_3);
-            fcb = new Checkbox("ì±„ìš°ê¸°");
+            fcb = new Checkbox("Ã¤¿ì±â");
             p1.add(fcb);
-            b = new Button("ê·¸ë¦¬ê¸°");
+            b = new Button("±×¸®±â");
             b.addActionListener(this);
             p1.add(b);
         } else if (cb == scb4) {
-            setTitle("ë¶€ì±„ê¼´ ê·¸ë¦¬ê¸°");
+            setTitle("ºÎÃ¤²Ã ±×¸®±â");
             tx_4 = new TextField("0", 3);
             ty_4 = new TextField("0", 3);
             tw_4 = new TextField("0", 3);
@@ -281,25 +281,25 @@ implements ActionListener, ItemListener {
             l = new Label("y");
             p1.add(l);
             p1.add(ty_4);
-            l = new Label("ë„ˆë¹„");
+            l = new Label("³Êºñ");
             p1.add(l);
             p1.add(tw_4);
-            l = new Label("ë†’ì´");
+            l = new Label("³ôÀÌ");
             p1.add(l);
             p1.add(th_4);
-            l = new Label("ì‹œì‘ê°ë„");
+            l = new Label("½ÃÀÛ°¢µµ");
             p1.add(l);
             p1.add(tsa_4);
-            l = new Label("íšŒì „ê°ë„");
+            l = new Label("È¸Àü°¢µµ");
             p1.add(l);
             p1.add(tra_4);
-            fcb = new Checkbox("ì±„ìš°ê¸°");
+            fcb = new Checkbox("Ã¤¿ì±â");
             p1.add(fcb);
-            b = new Button("ê·¸ë¦¬ê¸°");
+            b = new Button("±×¸®±â");
             b.addActionListener(this);
             p1.add(b);
         } else if (cb == scb5) {
-            setTitle("ë‘¥ê·¼ì‚¬ê°í˜• ê·¸ë¦¬ê¸°");
+            setTitle("µÕ±Ù»ç°¢Çü ±×¸®±â");
             tx_5 = new TextField("0", 3);
             ty_5 = new TextField("0", 3);
             tw_5 = new TextField("0", 3);
@@ -312,21 +312,21 @@ implements ActionListener, ItemListener {
             l = new Label("y");
             p1.add(l);
             p1.add(ty_5);
-            l = new Label("ë„ˆë¹„");
+            l = new Label("³Êºñ");
             p1.add(l);
             p1.add(tw_5);
-            l = new Label("ë†’ì´");
+            l = new Label("³ôÀÌ");
             p1.add(l);
             p1.add(th_5);
-            l = new Label("ì½”ë„ˆë„ˆë¹„");
+            l = new Label("ÄÚ³Ê³Êºñ");
             p1.add(l);
             p1.add(tcw_5);
-            l = new Label("ì½”ë„ˆë†’ì´");
+            l = new Label("ÄÚ³Ê³ôÀÌ");
             p1.add(l);
             p1.add(tch_5);
-            fcb = new Checkbox("ì±„ìš°ê¸°");
+            fcb = new Checkbox("Ã¤¿ì±â");
             p1.add(fcb);
-            b = new Button("ê·¸ë¦¬ê¸°");
+            b = new Button("±×¸®±â");
             b.addActionListener(this);
             p1.add(b);
         }

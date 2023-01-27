@@ -4,8 +4,8 @@ class Outer2{
 	int a=22;
 	void p() {
 		System.out.println("a="+a);
-		//ë‚´ë¶€ í´ëž˜ìŠ¤ëŠ” ì™¸ë¶€í´ëž˜ìŠ¤ ë‚´ì—ì„œë§Œ ì¼ë°˜ì ìœ¼ë¡œ ì‚¬ìš©ì„ í•˜ê³  
-		//ìƒë‹¹ížˆ ë°€ì ‘í•œ ê´€ê³„ê°€ ìžˆëŠ” ê¸°ëŠ¥ì˜ í´ëž˜ìŠ¤ë¡œ ì„ ì–¸
+		//³»ºÎ Å¬·¡½º´Â ¿ÜºÎÅ¬·¡½º ³»¿¡¼­¸¸ ÀÏ¹ÝÀûÀ¸·Î »ç¿ëÀ» ÇÏ°í 
+		//»ó´çÈ÷ ¹ÐÁ¢ÇÑ °ü°è°¡ ÀÖ´Â ±â´ÉÀÇ Å¬·¡½º·Î ¼±¾ð
 	}
 	class Inner2{
 		int b=23;
@@ -15,13 +15,13 @@ class Outer2{
 		}
 	}//Inner2
 }
-//ì™¸ë¶€í´ëž˜ìŠ¤ëŠ” ë‚´ë¶€í´ëž˜ìŠ¤ë¥¼ ë¶ˆëŸ¬ì˜¬ìˆ˜ì—†ì§€ë§Œ ë‚´ë¶€í´ëž˜ìŠ¤ëŠ” ì™¸ë¶€í´ëž˜ìŠ¤ë¥¼ ë¶ˆëŸ¬ì˜¬ìˆ˜ìž‡ë‹¤
+//¿ÜºÎÅ¬·¡½º´Â ³»ºÎÅ¬·¡½º¸¦ ºÒ·¯¿Ã¼ö¾øÁö¸¸ ³»ºÎÅ¬·¡½º´Â ¿ÜºÎÅ¬·¡½º¸¦ ºÒ·¯¿Ã¼öÀÕ´Ù
 
 public class InnerEx2{
 
 	public static void main(String[] args) {
-		//ì¼ë°˜ì ìœ¼ë¡œ ë‚´ë¶€í´ëž˜ìŠ¤ëŠ” ë‹¤ë¥¸ í´ëž˜ìŠ¤ì—ì„œ ìƒì„±í•˜ê³  ì‚¬ìš©í•˜ëŠ”ê²ƒì€ ê±°ì˜ ì—†ìŒ
-		//ì œ3ì˜ í´ëž˜ìŠ¤ì— ì‚¬ìš©ë²•
+		//ÀÏ¹ÝÀûÀ¸·Î ³»ºÎÅ¬·¡½º´Â ´Ù¸¥ Å¬·¡½º¿¡¼­ »ý¼ºÇÏ°í »ç¿ëÇÏ´Â°ÍÀº °ÅÀÇ ¾øÀ½
+		//Á¦3ÀÇ Å¬·¡½º¿¡ »ç¿ë¹ý
 		Outer2 out=new Outer2();
 		Outer2.Inner2 in=out.new Inner2();
 		in.p1();

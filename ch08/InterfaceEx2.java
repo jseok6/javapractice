@@ -1,13 +1,13 @@
 package ch08;
 
 interface Interface2{
-	int a=10;//í•„ë“œëŠ” ë¬´ì¡°ê±´ ìƒìˆ˜ static final
-	//void prn() {}//ì¼ë°˜ ë©”ì†Œë„ëŠ” ì„ ì–¸ë¶ˆê°€
+	int a=10;//ÇÊµå´Â ¹«Á¶°Ç »ó¼ö static final
+	//void prn() {}//ÀÏ¹İ ¸Ş¼Òµµ´Â ¼±¾ğºÒ°¡
 	void prn();
 	
 	
 }
-//ì¸í„°í˜ì´ìŠ¤ë¼ë¦¬ ìƒì†ê°€ëŠ¥
+//ÀÎÅÍÆäÀÌ½º³¢¸® »ó¼Ó°¡´É
 interface Interface2_1 extends Interface2{
 	void prn1();
 }

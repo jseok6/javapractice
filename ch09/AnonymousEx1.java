@@ -11,7 +11,7 @@ abstract class MyAbst1{
 class A implements MyInter{
 	
 	public void prn() {
-		System.out.println("ì¼ë°˜ì ì¸ êµ¬í˜„ ë°©ë²•");
+		System.out.println("ÀÏ¹İÀûÀÎ ±¸Çö ¹æ¹ı");
 	}
 }
 
@@ -31,19 +31,19 @@ public class AnonymousEx1 {
 		B b=new B();
 		b.prn();
 		
-		//í´ë˜ìŠ¤í™”ë¥¼ ì‹œì¼œ ë‹¤ë¥¸ê³³ì—ì„œ ì‚¬ìš©í•  ëª»ì ì´ ì•„ë‹Œ ì—¬ê¸°ì—ì„œë§Œ only ì‚¬ìš©
+		//Å¬·¡½ºÈ­¸¦ ½ÃÄÑ ´Ù¸¥°÷¿¡¼­ »ç¿ëÇÒ ¸øÀûÀÌ ¾Æ´Ñ ¿©±â¿¡¼­¸¸ only »ç¿ë
 		new MyInter1() {
 			
 			@Override
 			public void prn() {
-				System.out.println("ìµë©´í´ë˜ìŠ¤ êµ¬í˜„ ë°©ë²•");
+				System.out.println("ÀÍ¸éÅ¬·¡½º ±¸Çö ¹æ¹ı");
 			}
 		}.prn();;
 		
 		new MyAbst1() {
 			@Override
 			void prn() {
-				System.out.println("ìµë©´í´ë˜ìŠ¤ êµ¬í˜„ ë°©ë²•2");
+				System.out.println("ÀÍ¸éÅ¬·¡½º ±¸Çö ¹æ¹ı2");
 			}
 		}.prn();
 	}

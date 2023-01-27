@@ -1,12 +1,12 @@
 package ch06;
 
 
-class Car3/*í´ë˜ìŠ¤ëª…*/{
-	//í•„ë“œ:ê°ì²´ì˜ ì†ì„±<ã…¡ ë¬´ì¡°ê±´ ()ëŠ” ì—†ë‹¤.
+class Car3/*Å¬·¡½º¸í*/{
+	//ÇÊµå:°´Ã¼ÀÇ ¼Ó¼º<¤Ñ ¹«Á¶°Ç ()´Â ¾ø´Ù.
 	String carName;
 	int velocity;
 	String carColor;
-	//ë©”ì†Œë“œ:ê°ì²´ì˜ ê¸°ëŠ¥<ã…¡ ë°˜ë“œì‹œ ()ê°€ ìˆë‹¤.
+	//¸Ş¼Òµå:°´Ã¼ÀÇ ±â´É<¤Ñ ¹İµå½Ã ()°¡ ÀÖ´Ù.
 	void speedUp() {
 		velocity++;
 	}
@@ -24,30 +24,30 @@ class Car3/*í´ë˜ìŠ¤ëª…*/{
 public class CarEx3 {
 
 	public static void main(String[] args) {
-		//ì£¼ì†Œì— ì˜í•œ ì°¸ì¡°(call by reference)
+		//ÁÖ¼Ò¿¡ ÀÇÇÑ ÂüÁ¶(call by reference)
 /*		Car3 c1=new Car3();
 		Car3 c2=new Car3();
 		System.out.println(c1.toString());
 		System.out.println(c2.toString());
-		c2=c1;//ì°¸ì¡°í˜•ì˜'='ì€ call by reference ë°©ì‹
+		c2=c1;//ÂüÁ¶ÇüÀÇ'='Àº call by reference ¹æ½Ä
 		System.out.println(c1.toString());
 		System.out.println(c2.toString()); */
 		//
 		Car3 c1=new Car3();
 		Car3 c2=new Car3();
-		c1.carName="ì•„ë°˜ë–¼";
-		c2.carName="ì†Œë‚˜íƒ€";
+		c1.carName="¾Æ¹İ¶¼";
+		c2.carName="¼Ò³ªÅ¸";
 		System.out.println("c1:"+c1.carName);
 		System.out.println("c2:"+c2.carName);
 		c2=c1;
 		System.out.println("c1:"+c1.carName);
 		System.out.println("c2:"+c2.carName);
-		c1.carName="ê·¸ë Œì ¸";
+		c1.carName="±×·»Á®";
 		System.out.println("c1:"+c1.carName);
 		System.out.println("c2:"+c2.carName);
-		//ê°’ì— ì˜í•œ ì°¸ì¡°(call by value)
+		//°ª¿¡ ÀÇÇÑ ÂüÁ¶(call by value)
 		int a=10;
-		int b=a;//ìë°” ê¸°ë³¸í˜•: ê°’ì— ì˜í•œì°¸ì¡°
+		int b=a;//ÀÚ¹Ù ±âº»Çü: °ª¿¡ ÀÇÇÑÂüÁ¶
 		a=20;
 		System.out.println(a+b);
 	}

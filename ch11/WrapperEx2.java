@@ -1,40 +1,27 @@
 package ch11;
 
 public class WrapperEx2 {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		char c1='J';
-		System.out.println(c1);
+		char c1 = 'J';//¹®ÀÚÀÎÁö?
+		System.out.print(c1);
 		if(Character.isLetter(c1))
-			System.out.println(": ë¬¸ìì…ë‹ˆë‹¤.");
+			System.out.println(" : ¹®ÀÚÀÔ´Ï´Ù.");
 		
-		
-		char c2='a';
+		char c2 = 'a';//´ë¹®ÀÚÀÎÁö ¼Ò¹®ÀÚÀÎÁö ?
 		System.out.print(c2);
-		if(Character.isUpperCase(c2))//isLowerCase
-			System.out.println(":ëŒ€ë¬¸ìì…ë‹ˆë‹¤.");
-		else {
-			System.out.println(":ì†Œë¬¸ìì…ë‹ˆë‹¤.");
-		}
+		if(Character.isLowerCase(c2))
+			System.out.println(" : ¼Ò¹®ÀÚÀÔ´Ï´Ù.");
 		
-		char c3='2';
+		char c3 = '2';//¼ıÀÚÀÎÁö?
 		System.out.print(c3);
-		if(Character.isLetter(c3))//isDigit
-			System.out.println(":ë¬¸ìì…ë‹ˆë‹¤.");
-		else {
-			System.out.println(":ìˆ«ìì…ë‹ˆë‹¤.");
-		}
+		if(Character.isDigit(c3))
+			System.out.println(" : ¹®ÀÚÀÔ´Ï´Ù.");
 		
-		
-		
-		char c4=' ';
+		char c4 = ' ';//°ø¹é¹®ÀÚ?
 		System.out.print(c4);
-		if(Character.isSpace(c4))//isWhitespace
-			System.out.println(":ê³µë°±ì…ë‹ˆë‹¤");
+		if(Character.isWhitespace(c4))
+			System.out.println(" : °ø¹é¹®ÀÚÀÔ´Ï´Ù.");
 		
-		
-		System.out.println(Double.MAX_VALUE);
 		Long l;
 		Boolean b;
 		Short s;
@@ -44,5 +31,7 @@ public class WrapperEx2 {
 		Integer i;
 		Character c;
 	}
-
 }
+
+
+

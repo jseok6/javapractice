@@ -14,13 +14,13 @@ public class MyFrame extends MFrame implements ActionListener{
 	boolean flag=false;
 	public MyFrame() {
 		btn=new Button("Button");
-		add(btn,BorderLayout.SOUTH);//ë²„íŠ¼ì•„ë˜ë¡œ
+		add(btn,BorderLayout.SOUTH);//¹öÆ°¾Æ·¡·Î
 		//add(btn,"South");
-		setBackground(Color.ORANGE);//ë°°ê²½ìƒ‰
+		setBackground(Color.ORANGE);//¹è°æ»ö
 		
-		//ë‚´ ìì‹ ì´ ActionListeneríƒ€ì…ì´ë¯€ë¡œ thisê°€ ê°€ëŠ¥
-		//ë²„íŠ¼ì„ í´ë¦­ì„ í•˜ë©´ ActionEvent ê°ì²´ê°€ ë‚´ë¶€ì ìœ¼ë¡œ ìƒì„±ë¨
-		btn.addActionListener(this);//actionperformed ì—°ê²° ë©”ì†Œë“œì„
+		//³» ÀÚ½ÅÀÌ ActionListenerÅ¸ÀÔÀÌ¹Ç·Î this°¡ °¡´É
+		//¹öÆ°À» Å¬¸¯À» ÇÏ¸é ActionEvent °´Ã¼°¡ ³»ºÎÀûÀ¸·Î »ı¼ºµÊ
+		btn.addActionListener(this);//actionperformed ¿¬°á ¸Ş¼ÒµåÀÓ
 		
 	}
 	@Override

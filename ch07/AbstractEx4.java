@@ -1,6 +1,6 @@
 package ch07;
 
-//ë„í˜•
+//µµÇü
 abstract class Shape{
 	int x,y;
 	void move(int x, int y) {
@@ -12,32 +12,32 @@ abstract class Shape{
 }
 
 
-//ì‚¼ê°í˜•
+//»ï°¢Çü
 class Triangle extends Shape{
 
 	@Override
 	void draw() {
-		System.out.println("ì‚¼ê°í˜• ê·¸ë¦¬ê¸°");
+		System.out.println("»ï°¢Çü ±×¸®±â");
 	}
 	
 }
 
 
-//ì‚¬ê°í˜•
+//»ç°¢Çü
 class Rectangle extends Shape{
 
 	@Override
 	void draw() {
-		System.out.println("ì‚¬ê°í˜• ê·¸ë¦¬ê¸°");
+		System.out.println("»ç°¢Çü ±×¸®±â");
 	}
 	
 }
-//ì›
+//¿ø
 class Circle extends Shape{
 
 	@Override
 	void draw() {
-		System.out.println("ì› ê·¸ë¦¬ê¸°");
+		System.out.println("¿ø ±×¸®±â");
 	}
 	
 }

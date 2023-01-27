@@ -5,7 +5,7 @@ public class MemberBean {
 	private int age;
 	
 	public String getId() {
-		return id;//this ì“°ëŠ” ì´ìœ  í•„ë“œë¥¼ êµ¬ë¶„í•˜ê¸°ìœ„í•´
+		return id;//this ¾²´Â ÀÌÀ¯ ÇÊµå¸¦ ±¸ºĞÇÏ±âÀ§ÇØ
 	}
 	public void setID(String id) {
 		this.id=id;

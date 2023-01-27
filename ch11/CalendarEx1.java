@@ -5,24 +5,21 @@ import java.util.Calendar;
 public class CalendarEx1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Calendar cal=Calendar.getInstance();//ì¶”ìƒí´ë˜ìŠ¤ ê°ì²´ìƒì„±
-		System.out.print("ì˜¤ëŠ˜ì˜ ë‚ ì§œëŠ” ");
-		System.out.print(cal.get(Calendar.YEAR)+"ë…„");
-		System.out.print(cal.get(Calendar.MONTH)+1+"ì›”");
-		System.out.print(cal.get(Calendar.DATE)+"ì¼");
-		System.out.println("");
-		int hour=cal.get(Calendar.HOUR);
-		int min=cal.get(Calendar.MINUTE);
-		int sec=cal.get(Calendar.SECOND);
-		int am_pm=cal.get(Calendar.AM_PM);
-		if (am_pm==Calendar.AM) {
-			System.out.print("í˜„ì¬ ì‹œê°„ì€ AM ");
-		}
-		else {
-			System.out.print("í˜„ì¬ ì‹œê°„ì€ PM ");
-		}
-		System.out.println(hour+"ì‹œ"+min+"ë¶„"+sec+"ì´ˆ");
+		Calendar cal = Calendar.getInstance();
+		System.out.print("¿À´ÃÀÇ ³¯Â¥´Â ");
+		System.out.print(cal.get(Calendar.YEAR)+"³â ");
+		System.out.print(cal.get(Calendar.MONTH)+1+"¿ù ");
+		System.out.print(cal.get(Calendar.DATE)+"ÀÏ ");
+		System.out.println();
+		int hour = cal.get(Calendar.HOUR);
+		int min = cal.get(Calendar.MINUTE);
+		int sec = cal.get(Calendar.SECOND);
+		int ampm = cal.get(Calendar.AM_PM);
+		if(ampm==Calendar.AM)
+			System.out.print("ÇöÀç ½Ã°£Àº AM ");
+		else
+			System.out.print("ÇöÀç ½Ã°£Àº PM ");
+		System.out.println(hour +"½Ã " + min +"ºĞ " + sec +"ÃÊ");
 		
 	}
 

@@ -1,7 +1,7 @@
 package ch08;
 
 
-//ë‹¤ë¥¸í´ë˜ìŠ¤ ìƒì†í–ˆë‹¤ê³  ê°€ì •í•˜ê³ 
+//´Ù¸¥Å¬·¡½º »ó¼ÓÇß´Ù°í °¡Á¤ÇÏ°í
 public class InterfaceEx6 implements Runnable{
 	String name;
 	
@@ -25,9 +25,9 @@ public class InterfaceEx6 implements Runnable{
 	}
 	
 	public static void main(String[] args) {
-		InterfaceEx6 a= new InterfaceEx6("ì²«ë²ˆì§¸");
-		InterfaceEx6 b= new InterfaceEx6("ë‘ë²ˆì§¸");
-		new Thread(a).start();//ê²°ë¡ ì ìœ¼ë¡œ runë©”ì†Œë“œ í˜¸ì¶œ
+		InterfaceEx6 a= new InterfaceEx6("Ã¹¹øÂ°");
+		InterfaceEx6 b= new InterfaceEx6("µÎ¹øÂ°");
+		new Thread(a).start();//°á·ĞÀûÀ¸·Î run¸Ş¼Òµå È£Ãâ
 		new Thread(b).start();
 
 	}

@@ -4,9 +4,9 @@ public class Ex7 {
 	int a;
 
 	public static void main(String[] args) {
-		//forë¬¸ì„ ì´ìš©í•˜ì—¬ 1~10ê¹Œì§€ í•© êµ¬í•˜ê¸°
-		int total=0;//ë³€ìˆ˜ëª… í•œë²ˆì— ë°”ê¾¸ëŠ”ë²•!! ë“œë˜ê·¸í•´ì„œ ì˜¤ë¥¸ìª½ë§ˆìš°ìŠ¤ ê°–ë‹¤ëŒ„ ë‹¤ìŒ refactor
-		//ë‹¤ìŒì— rename
+		//for¹®À» ÀÌ¿ëÇÏ¿© 1~10±îÁö ÇÕ ±¸ÇÏ±â
+		int total=0;//º¯¼ö¸í ÇÑ¹ø¿¡ ¹Ù²Ù´Â¹ı!! µå·¡±×ÇØ¼­ ¿À¸¥ÂÊ¸¶¿ì½º °®´Ù´í ´ÙÀ½ refactor
+		//´ÙÀ½¿¡ rename
 		for(int i=1,j=0;i<11; i++,j++) {
 			total=total+i;
 		}

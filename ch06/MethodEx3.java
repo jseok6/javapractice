@@ -1,7 +1,7 @@
 package ch06;
 
 class Method3{
-	void prn(int...arr/*ë°°ì—´ë¡œì¸ì‹*/)//ê°€ë³€ì¸ìˆ˜ë¡œ ë§Œë“ ê²ƒ
+	void prn(int...arr/*¹è¿­·ÎÀÎ½Ä*/)//°¡º¯ÀÎ¼ö·Î ¸¸µç°Í
 	{
 		for(int i=0; i<arr.length;i++)
 		{
@@ -19,7 +19,7 @@ public class MethodEx3 {
 		mt.prn(1,2,3);
 		mt.prn(1,2,3,4);
 		mt.prn(1,4,5,6,7,8,9,10);
-		System.out.printf("%s", "í•˜í•˜");//ê°€ë³€ì¸ìˆ˜
+		System.out.printf("%s", "ÇÏÇÏ");//°¡º¯ÀÎ¼ö
 	}
 
 }
